@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  mongo:
+    container_name: mongo
+    image: mongo:latest
+    command: --replSet rs0  # <--- this startup command enables the replicaset.
+    ports:
+      - '27017:27017'
+    volumes:
+      - ./data/mongo:/data/db
+
+  rabbitmq:
+    image: rabbitmq:management
+    container_name: 'rabbitmq'
+    hostname: 'st-rabbit'
+    ports:
+        - 5672:5672
+        - 15672:15672
+    volumes:
+        - ./data/rabbitmq/data/:/var/lib/rabbitmq/
+        - ./data/rabbitmq/log/:/var/log/rabbitmq/

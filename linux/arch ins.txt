@@ -1,0 +1,74 @@
+lsblk
+ls /sys/firmware/efi/efivars	#bios uefi
+ping lukesmith.xyz	#inenet
+wifi-menu
+timedatectl set-ntp true
+
+lsblk
+sda/sdb?
+fdisk /dev/sdb
+p #show partiton
+d #del partition
+p #show partiton
+n #new partiton
+boot partiton
++200M
+swap partiton
++3G
+root partiton
++25G
+home partiton
+p
+w #write
+lsblk
+
+mkfs.ext4 /dev/sdb1 	#for boot root home
+mkswap /dev/sdb2
+swapon /dev/sdb2
+lsblk
+
+mount /dev/sdb3 /mnt #root
+mkdir /mnt/home
+mkdir /mnt/boot
+mount /dev/sdb1 /mnt/boot
+mount /dev/sdb4 /mnt/home
+lsblk
+
+pacstrap /mnt base base-devel vim 
+
+genfstab -U /mnt >> /mnt/etc/fstab #check for 2 swap
+arch-chroot /mnt #go into hdd arch root dir
+
+pacman -S networkmanager
+systemctl enable NetworkManager
+pacman -S grub
+lsblk
+grub-install --target=i386-pc /dev/sdb
+grub-mkconfig -o /boot/grub/grub.cfg
+passwd #root password
+vim /etc/locale.gen # en utf & iso
+locale-gen
+vim /etc/locale.conf
+	LANG=en-US.UTF-8
+ls /usr/share/zoneinfo/
+ln -sf /usr/share/zoneinfo/India/Kolcata /etc/localtime
+vim /etc/hostname
+	arch_xiaoni
+exit
+umount -R /mnt
+reboot
+##curl -LO larbs.xyz/larbs.sh
+##bash larbs.sh
+useradd -m -g wheel ramai
+passwd ramai
+vim /etc/sudoers
+~#wheel stuf
+~all all #uncoment line
+pacman -S xorg-server xorg-xinit
+pacman -S i3-gaps i3status rxvt-unicode dmenu
+pacman -S network-manager-applet
+pacman -S noto-fonts
+
+#~/.profile
+#~/.bash_profile 
+## files that are read at startup 

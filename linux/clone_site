@@ -1,0 +1,13 @@
+wget -E -F -k -K -l 100 -N -nH -p -r -v http://forum.phalcon.io/
+The options used are:
+
+-E : rename html files to .html (adjust extensions)
+-F : Force reading inputs as HTML files
+-k : Convert links to relative (local viewing)
+-K : Backup converted files
+-l 100 : Recurse 100 levels deep (it should be enough)
+-N : Time stamp on
+-nH : Disable generation of host-prefixed directories.
+-p : Download all assets for a page (css, js, images)
+-r : Recursive (important)
+-v : Verbose

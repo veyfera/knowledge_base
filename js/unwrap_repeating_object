@@ -1,0 +1,16 @@
+let values: any = {};
+Object.values(message.view.state.values).forEach(v => Object.assign(values, v));
+
+
+
+{
+    idk: { idk: { text: 'hi', num: 5 }},
+    rabbit: { rabbit: { text: 'hello', num: 3 }},
+}
+
+--->
+
+{
+    idk: { text: 'hi', num: 5 },
+    rabbit: { text: 'hello', num: 3 },
+}

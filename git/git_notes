@@ -1,0 +1,24 @@
+git init
+git status
+	branch:
+	files
+git add -A	// staged all untracked, for delition, modified files
+git commit -m 'adding my file'
+git log	// show everyting that happened
+
+git remote add origin SSHlinkFromGithub
+git push -u origin master	//only for first push
+git push	//all next pushes
+git pull
+
+git branch	//show current branch
+git checkout -b branchname	//create new branch
+git push -u origin branchname //only for first push
+git chckout master	//swithch branch
+
+//git merge, start in branch you are merging inoto eg. master
+git merge branchname
+
+# avoid pre commit hook
+git commit -m 'commit message' --no-verify
+

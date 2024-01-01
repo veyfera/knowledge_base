@@ -1,0 +1,3 @@
+:%s/foo/bar/g	#find all foo and replace with bar
+:s/foo/bar/g	#find all foo and replace with bar on current line
+:%s/foo/bar/gc	#find all foo and replace with bar, ask confirmation

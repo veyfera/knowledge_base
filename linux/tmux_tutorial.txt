@@ -1,0 +1,19 @@
+ctrl + b
+c	#add new tab
+n	#next tab
+p	#previous tab
+z	#fullscreen
+<number>	#move to  tab number N
+,	#rename tab
+%	#vertical split
+"	#horizontal split
+arrow keys	#navigate split 'plane'
+q	#show plane numbers
+[	#start copy nmode
+ctrl+spacs	#start copy
+alt+w	#stop copy
+]	#paste
+tmux new -s sessionmane	#create session
+s	#list sessions
+d	#dismount session
+a	#remount current session

@@ -1,0 +1,25 @@
+You can achieve the single replica setup easily without using the above images like so:
+
+version: '3'
+
+services:
+  mongo:
+    container_name: mongo
+    image: mongo:4
+    command: --replSet rs0  # <--- this startup command enables the replicaset.
+    ports:
+      - '27017:27017'
+      - '28017:28017'
+    volumes:
+      - ./data/mongo:/data/db
+Then you need run the following once to start the replicaset:
+
+docker-compose exec mongo mongo --eval "rs.initiate({_id: 'rs0', members: [{_id: 0, host: 'localhost:27017'}]});"
+I don't think we would add the images directly in the documentation as they tailor to our specific testing needs. You can find some docs on them here:
+https://github.com/prisma/engine-images/tree/main/mongo
+
+https://github.com/prisma/prisma/discussions/12211#discussioncomment-2322526
+
+
+#also
+rs.ismaster().primary

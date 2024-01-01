@@ -1,0 +1,73 @@
+import * as FileSystem from "expo-file-system";
+import * as SQLite from 'expo-sqlite';
+import {Asset} from "expo-asset";
+
+async function openDatabase() {
+  console.log('i started bd stuff')//REMOVE
+  if (!(await FileSystem.getInfoAsync(FileSystem.documentDirectory + 'SQLite')).exists) {
+    console.log('new directory')//REMOVE
+    await FileSystem.makeDirectoryAsync(FileSystem.documentDirectory + 'SQLite');
+  }
+  console.log('starting download')//REMOVE
+  await FileSystem.downloadAsync(
+    Asset.fromModule(require('./assets/db/bookBase.db')).uri,
+    FileSystem.documentDirectory + 'SQLite/bookBase.db'
+  );
+  return SQLite.openDatabase('bookBase.db');
+}
+
+
+  function BookList(props) {
+    const [books, setBooks] = React.useState(null);
+    var readyBooks = []
+    var letters = []
+    var db = null
+
+    React.useEffect(() => {
+      (async () => {
+        db = await openDatabase()
+        console.log('data base: ', db)
+        console.log('state running')
+        db.transaction((tx) => {
+          tx.executeSql(
+            'select * from books order by name asc;',
+            [],
+            (_, {rows: { _array } }) => setBooks(_array),
+            (_, error) => console.log('erroR: ', error)
+            );
+        }, (error) => console.log('transtaction erroR: ', error))
+        console.log('state ended')
+      }).call()
+    }, []);
+
+
+    if (books){
+      for (let i =0; i<books.length; i++){
+        let firstLetter = books[i].name.substr(0, 1)
+        if (letters.includes(firstLetter)){
+          var index = letters.indexOf(firstLetter)
+          console.log('index: ', index, 'letter: ', firstLetter)
+          readyBooks[index].data.push(books[i])
+          continue
+        }
+        letters.push(firstLetter)
+        readyBooks.push({title: firstLetter, data: [books[i]]})
+      }
+      console.log(letters)
+      for (let i =0; i<readyBooks.length; i++) console.log(readyBooks[i].title, readyBooks[i].data.length)
+    }
+
+
+    return(
+      <View style={styles.bookList}>
+            <SectionList
+        sections={readyBooks}
+        keyExtractor={(item, index) => item + index}
+        renderItem={({ item }) => <BookListItem item={item} navigation={props.navigation} />}
+        renderSectionHeader={({ section: { title } }) => (
+          <Text style={styles.sectinoLetter}>{title}</Text>
+        )}
+      />
+      </View>
+      )
+  }

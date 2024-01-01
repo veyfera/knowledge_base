@@ -1,0 +1,29 @@
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+
+$ alias cdproj='cd /dir/web/www/proj'	#put in .bashrc to execute commands
+windows C drive is in /mnt/c
+pip install --upgrade youtube-dl	#upgrade youtube-dl (on windows)
+C:\Windows\System32\bash.exe -c "mkdir hello"	#launch Linux commands in windows via shortcut or just use bash ~~~
+Get-Clipboard > file.txt   #get clipboard windows	
+'''
+set backupdir=C:\Users\ramai\bacup\vim
+set dir=C:\Users\ramai\bacup\vim\swap
+set undodir=C:\Users\ramai\bacup\vim\undos
+set undofile
+set bk
+'''	#make vim backups in one directory not to have ~files everywhere
+Ctrl+Shift+p Pacage Control:#sublime text plungins 
+
+pyinstaller -D -F -n main -c "main.py"	#make a linux compatible package
+install entr for automation{
+	python ide:{
+	echo filename.py | entr -s 'python3 filename.py ; clear'
+	}
+
+
+}
+
+ideavim (pycharm) put config into C:\Users\ramai\.PyCharmCE2018.2\config\plugins\IdeaVim
+
+sudo apt-get install texlive-fonts-recommended	# for pandoc md to pdf
+xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'	# remap caps lock to Esc

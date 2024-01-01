@@ -1,0 +1,5 @@
+dd if=/path/to/downloaded.iso of=/dev/sd<X> bs=4M status=progress && sync
+
+If you get the message
+# dd: invalid status flag: 'progress'
+your dd version does not support the status=progress option and therefore you have to remove it (and you will miss the writing progress indicator).

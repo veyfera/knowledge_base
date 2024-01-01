@@ -1,0 +1,60 @@
+11 on18 12 on 18 11mj18
+conversion to mb etc.	# /*1000/1024
+
+fetch exec register level:
+mar <- [pc]
+mdr <- [[mar]]
+pc <- [pc]+1
+cir <-[mdr]
+
+/////////////////////////
+images 
+
+ethics referance
+///////////////////////////
+ram s d:
+dram:
+ regular recharge
+ cheap
+ higher capcity
+ power eficency
+sram:
+ fastser acces speeds
+ expencive...
+ stores data while computer is on
+//////////////////////////
+www vs internet	#interner is infrastrucure www is websites and content itself
+/////////////////////////////
+checksu + hash
+
+what is register
+
+os tasks
+//////////////////////////////
+normal forms	#first: no repetitions,second: for repeating tables no partial dependencies third: no non-key dependencies no transitive dependencies
+//////////////
+varchar(25) #varaible with lenth limit
+/////////////////////
+kibi=1024
+/////////////////////////
+interpriter and compiler
+////////////////////////
+//dockument all this somewhere safe
+
+referantial integrity 
+ascii
+sound
+validation verification
+os utility ...
+
+1NF
+• No repeated groups of attributes
+• All attributes should be atomic
+  No duplicate rows
+2NF (in 1NF and)
+• No partial dependencies
+3NF (in 2NF and)
+• No non-key dependencies
+• No transitive dependencies
+
+SQL

@@ -1,0 +1,5 @@
+to open mobile version on desktop
+http://m.youtube.com/?persist_app=1&app=m
+
+to return to desktop version
+http://www.youtube.com/?persist_app=1&app=desktop

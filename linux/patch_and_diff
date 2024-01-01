@@ -1,0 +1,8 @@
+patch and diff
+
+diff old_file new_file
+diff -u old_file new_file
+diff -u old_file new_file > brand_new_file.diff
+
+patch < brand_new_file.diff	#will modify old_file
+patch -R < brand_new_file.diff

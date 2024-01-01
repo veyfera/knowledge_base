@@ -1,0 +1,3 @@
+	own_window_transparent = flase,
+	own_window_argb_visual = true,
+	own_window_argb_value = 200,

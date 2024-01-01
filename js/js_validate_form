@@ -1,0 +1,10 @@
+// $('#save-button').click(function(){
+// 	var recipeForm = $("#recipe-form")[0]
+// 	var formIsValid = recipeForm.checkValidity()
+// 	if (formIsValid){
+// 		$("#recipe-form").submit()	//Does not use variable 'recipeForm' for AJAX to work
+// 	}
+// 	else {
+// 		recipeForm.reportValidity();
+// 	}
+// });

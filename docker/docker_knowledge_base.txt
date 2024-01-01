@@ -1,0 +1,65 @@
+Here I have an example of a 'docker-compose.yml' file to lift a few images at a time,
+
+
+// tells version of docker-compose
+version: '3'
+
+//images that docker will lift
+services:
+
+//name of container(custom)
+  web:
+//name of image to use
+    image: php_gz_zip:latest
+//map port 80 of container to port 80 on your host
+    ports:
+      - 80:80
+// map the host's './src' folder to container's '/var/www/html'
+    volumes:
+      - ./src:/var/www/html
+
+  mariadb:
+    image: mariadb:10.3
+    restart: always
+    volumes:
+      - ./mariadb:/var/lib/mysql
+//settings for the database
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+//makes sure that container is connected to mariadb(maps mariadb container to db in phpmyadmin)
+    links:
+      - mariadb:db
+    ports:
+      - 8765:80
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+// makes sure mariadb starts before phpmyadmin
+    depends_on:
+      - mariadb
+
+
+And an example of a Docerfile
+It allows to create a custom image
+
+//our image is based on 'php:5.5-apache'
+FROM php:5.5-apache
+
+//command to cus
+RUN apt-get update && apt-get install -y \
+        libfreetype6-dev \
+        libjpeg62-turbo-dev \
+        libpng-dev \
+        libmcrypt-dev \
+    && docker-php-ext-install -j$(nproc) iconv \
+    && docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ \
+    && docker-php-ext-install -j$(nproc) gd zip \
+    && docker-php-ext-install mcrypt mysqli
+
+
+
+//command to build the image
+docker build -t php_gz_zip .
+

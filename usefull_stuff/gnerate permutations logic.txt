@@ -1,0 +1,3 @@
+0,1  3 symbols --> 8 combinations
+0,1  4 symbols --> 16 combinations
+	#amount of items ^ ¹ symbols#

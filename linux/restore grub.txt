@@ -1,0 +1,19 @@
+1. Use this if second method shows "unknown file-system" for all partitions
+---|
+   |
+   \/
+###this is done from live usb (in my case fedora 29)
+$ sudo su -
+# mkdir /mnt/sda
+# mount /dev/sda1 /mnt/sda
+# grub2-install --boot-directory /mnt/sda/boot /dev/sda
+Installing for i386-pc platform.
+Installation finished. No error reported.
+
+
+ls
+ls (hd0,msdos6)
+set root=(hd0,msdos6)
+set prefix=(hd0,msdos6)/boot/grub
+insmod normal
+normal

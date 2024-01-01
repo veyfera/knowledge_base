@@ -1,0 +1,2 @@
+list(os.listdir())	#ls
+os.system(<command>)	#execute system commands

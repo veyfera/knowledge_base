@@ -1,0 +1,1 @@
+magick mogrify -resize 267x357 -quality 100 -path ../new-thumbs *.jpg

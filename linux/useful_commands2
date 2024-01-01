@@ -1,0 +1,30 @@
+sudo sed -i 's/NoDisplay=true/NoDisplay=false/g' /etc/xdg/autostart/*.desktop	#show all startup processses ubuntu 18.4
+df -h| grep -v "/snap"  #show free space in human readable format without snaps showing
+/usr/bin/setxkbmap -option "caps:swapescape"    //swap esc and caps lock
+////////////////////
+src="lego.avi"
+dest="output.gif"
+palette="/tmp/palette.png"
+
+ffmpeg -i $src -vf palettegen -y $palette
+ffmpeg -i $src -i $palette -lavfi paletteuse -y $dest
+//convert avi to gif
+///////////////////
+sudo sed -i 's/Exec=env BAMF_DESKTOP_FILE_HINT=\/var\/lib\/snapd\/desktop\/applications\/atom_atom.desktop \/snap\/bin\/atom ATOM_DISABLE_SHELLING_OUT_FOR_ENVIRONMENT=false \/usr\/bin\/atom %F/Exec=env BAMF_DESKTOP_FILE_HINT=\/var\/lib\/snapd\/desktop\/applications\/atom_atom.desktop ATOM_DISABLE_SHELLING_OUT_FOR_ENVIRONMENT=false \/snap\/bin\/atom %F/' /var/lib/snapd/desktop/applications/atom_atom.desktop
+//fix atoms opening not existing files on strartup (ATOM_DISABLE_SHELLING_OUT_FOR_ENVIRONMENT)
+pulseaudio -k && sudo alsa force-reload // restart sond
+
+ffmpeg -ss <start> -t <duration> -i in1.avi -vcodec copy -acodec copy out1.avi  //cut video fast
+
+ffmpeg -ss <start> -t <duration> -i in1.avi -sameq out1.avi //cut video slow
+
+convert -strip -interlace Plane -gaussian-blur 0.05 -quality 75% input_file.jpg output_file.jpg     //compress image
+
+##Fix external mic through combo jack, expiriment with coma ","
+vim /etc/modprobe.d/alsa-base.conf 
+options snd-hda-intel position fix=1
+options snd-hda-intel model=dell-headset-multi
+grep -Eiwo -m1 'nvidia|amd|ati|intel' /var/log/Xorg.0.log   #see which GPU is used
+grep -R linuxize.com /etc   #search for 'linuxize.com' recursively in all files in '/etc'
+grep -rli 'old-word' * | xargs -i@ sed -i 's/old-word/new-word/g' @     #replace old-word with new-word recursively
+python -mjson.tool croc_data.json > /dev/null   #validate json file

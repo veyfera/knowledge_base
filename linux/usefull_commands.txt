@@ -1,0 +1,23 @@
+sudo /etc/init.d/network-manager restart  	#network restrt
+gksudo modprobe -r psmouse	#mose restart
+gksudo modprobe psmouse		#keyboard restart
+xset led 3			#keybord backlight off
+dconf reset -f /org/gnome/desktop/peripherals/touchpad/		#reset touchpad options
+dconf reset -f /org/gnome/desktop/peripherals/mouse/		#reset mouse to defaut
+sudo apt-get remove <application_name>		#uninstall app
+sudo apt-get install exfat-fuse exfat-utils		#exfat pendrives
+sudo apt-get install python3-tk		#pyhton tk inter install
+sudo service upower restart		#update battery status
+upower -i /org/freedesktop/UPower/devices/battery_BAT0		#show battery life + status
+nmcli radio wifi off	#toggle wi fi
+nmcli radio wifi on
+https://ubuntuforums.org/showthread.php?t=1695470	#disable touchpad while typing
+pulseaudio -k && sudo alsa force-reload	#reset sound
+xrandr -o normal	#rotate screen
+sudo apt-get install vim-gtk3	#install gvim on ubuntu 18
+xev #see keepresses and mouse actions
+
+zathura-pdf-poppler	#get zathura to work on manjaro and so on
+
+sudo apt-get install libusb-dev --install-suggests	#if mtp device(phone do not transer data)
+gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -sOutputFile=output.pdf input.pdf #change screen to ebook for better quality
