@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)https://www.funtoo.org/Funtoo_Linux_First_Steps -->
+<html class="client-js" lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Funtoo Linux First Steps - Funtoo</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"mdy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"2050511c1edff2e8fa5f2352","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Funtoo_Linux_First_Steps","wgTitle":"Funtoo Linux First Steps","wgCurRevisionId":28582,"wgRevisionId":28582,"wgArticleId":675,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["HOWTO","Install","Featured"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Funtoo_Linux_First_Steps","wgRelevantArticleId":675,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[],
+"wgULSAcceptLanguageList":["en-us","en"],"wgULSCurrentAutonym":"English","wgCargoDefaultQueryLimit":100,"wgCargoMapClusteringMinimum":80,"wgCargoMonthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"wgCargoMonthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgCargoWeekDays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"wgCargoWeekDaysShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"wgPageFormsTargetName":null,"wgPageFormsAutocompleteValues":[],"wgPageFormsAutocompleteOnAllChars":!1,"wgPageFormsFieldProperties":[],"wgPageFormsCargoFields":[],"wgPageFormsDependentFields":[],"wgPageFormsCalendarValues":[],"wgPageFormsCalendarParams":[],"wgPageFormsCalendarHTML":null,"wgPageFormsGridValues":[],"wgPageFormsGridParams":[],"wgPageFormsContLangYes":null,"wgPageFormsContLangNo":null,"wgPageFormsContLangMonths":[],
+"wgPageFormsHeightForMinimizingInstances":800,"wgPageFormsShowOnSelect":[],"wgPageFormsScriptPath":"/extensions/PageForms","edgValues":[],"wgPageFormsEDSettings":null,"wgAmericanDates":!0,"egMapsScriptPath":"/extensions/Maps/","egMapsDebugJS":!1,"egMapsAvailableServices":["leaflet","googlemaps3"],"egMapsLeafletLayersApiKeys":{"MapBox":"","MapQuestOpen":"","Thunderforest":"","GeoportailFrance":""},"wgULSPosition":"personal","wgULSisCompactLinksEnabled":!0,"wgTranslatePageTranslation":"source"};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","ext.translate":"ready","ext.translate.tag.languages":"ready","ext.pygments":"ready","skins.vector.styles.legacy":"ready","ext.uls.pt":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","skins.vector.legacy.js","ext.uls.compactlinks","ext.uls.interface"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="./Funtoo Linux First Steps - Funtoo_files/load.php">
+<script async="" src="./Funtoo Linux First Steps - Funtoo_files/load(1).php"></script>
+<style>
+.mw-ui-button{background-color:#f8f9fa;color:#202122;display:inline-block;-moz-box-sizing:border-box;box-sizing:border-box;min-height:32px;min-width:4em;max-width:28.75em;margin:0;padding:5px 12px;border:1px solid #a2a9b1;border-radius:2px;cursor:pointer;vertical-align:middle;font-family:inherit;font-size:1em;font-weight:bold;line-height:1.28571429em;text-align:center;-webkit-appearance:none}.mw-ui-button:visited{color:#202122}.mw-ui-button:hover{background-color:#ffffff;color:#404244;border-color:#a2a9b1}.mw-ui-button:focus{background-color:#ffffff;color:#202122;border-color:#3366cc;box-shadow:inset 0 0 0 1px #3366cc,inset 0 0 0 2px #ffffff;outline-width:0}.mw-ui-button:focus::-moz-focus-inner{border-color:transparent;padding:0}.mw-ui-button:active,.mw-ui-button.is-on{background-color:#c8ccd1;color:#000000;border-color:#72777d;box-shadow:none}.mw-ui-button:disabled{background-color:#c8ccd1;color:#ffffff;border-color:#c8ccd1;cursor:default}.mw-ui-button:disabled:hover,.mw-ui-button:disabled:active{background-color:#c8ccd1;color:#ffffff;box-shadow:none;border-color:#c8ccd1}.mw-ui-button:not(:disabled){-webkit-transition:background-color 100ms,color 100ms,border-color 100ms,box-shadow 100ms;transition:background-color 100ms,color 100ms,border-color 100ms,box-shadow 100ms}.mw-ui-button.mw-ui-quiet,.mw-ui-button.mw-ui-quiet.mw-ui-progressive,.mw-ui-button.mw-ui-quiet.mw-ui-destructive{background-color:transparent;color:#202122;min-height:32px;border-color:transparent;font-weight:bold}.mw-ui-button.mw-ui-quiet:hover,.mw-ui-button.mw-ui-quiet.mw-ui-progressive:hover,.mw-ui-button.mw-ui-quiet.mw-ui-destructive:hover{background-color:#f8f9fa;color:#404244;border-color:transparent;box-shadow:none}.mw-ui-button.mw-ui-quiet:active,.mw-ui-button.mw-ui-quiet.mw-ui-progressive:active,.mw-ui-button.mw-ui-quiet.mw-ui-destructive:active{background-color:#eaecf0;color:#000000;border-color:#72777d}.mw-ui-button.mw-ui-quiet:focus,.mw-ui-button.mw-ui-quiet.mw-ui-progressive:focus,.mw-ui-button.mw-ui-quiet.mw-ui-destructive:focus{background-color:transparent;color:#202122;border-color:#3366cc;box-shadow:none}.mw-ui-button.mw-ui-quiet:disabled,.mw-ui-button.mw-ui-quiet.mw-ui-progressive:disabled,.mw-ui-button.mw-ui-quiet.mw-ui-destructive:disabled,.mw-ui-button.mw-ui-quiet:disabled:hover,.mw-ui-button.mw-ui-quiet.mw-ui-progressive:disabled:hover,.mw-ui-button.mw-ui-quiet.mw-ui-destructive:disabled:hover,.mw-ui-button.mw-ui-quiet:disabled:active,.mw-ui-button.mw-ui-quiet.mw-ui-progressive:disabled:active,.mw-ui-button.mw-ui-quiet.mw-ui-destructive:disabled:active{background-color:transparent;color:#72777d;border-color:transparent}.mw-ui-button.mw-ui-progressive{background-color:#3366cc;color:#fff;border:1px solid #3366cc}.mw-ui-button.mw-ui-progressive:hover{background-color:#447ff5;border-color:#447ff5}.mw-ui-button.mw-ui-progressive:focus{box-shadow:inset 0 0 0 1px #3366cc,inset 0 0 0 2px #ffffff}.mw-ui-button.mw-ui-progressive:active,.mw-ui-button.mw-ui-progressive.is-on{background-color:#2a4b8d;border-color:#2a4b8d;box-shadow:none}.mw-ui-button.mw-ui-progressive:disabled{background-color:#c8ccd1;color:#fff;border-color:#c8ccd1}.mw-ui-button.mw-ui-progressive:disabled:hover,.mw-ui-button.mw-ui-progressive:disabled:active{background-color:#c8ccd1;color:#fff;border-color:#c8ccd1;box-shadow:none}.mw-ui-button.mw-ui-progressive.mw-ui-quiet{color:#3366cc}.mw-ui-button.mw-ui-progressive.mw-ui-quiet:hover{background-color:transparent;color:#447ff5}.mw-ui-button.mw-ui-progressive.mw-ui-quiet:active{color:#2a4b8d}.mw-ui-button.mw-ui-progressive.mw-ui-quiet:focus{background-color:transparent;color:#3366cc}.mw-ui-button.mw-ui-destructive{background-color:#dd3333;color:#fff;border:1px solid #dd3333}.mw-ui-button.mw-ui-destructive:hover{background-color:#ff4242;border-color:#ff4242}.mw-ui-button.mw-ui-destructive:focus{box-shadow:inset 0 0 0 1px #dd3333,inset 0 0 0 2px #ffffff}.mw-ui-button.mw-ui-destructive:active,.mw-ui-button.mw-ui-destructive.is-on{background-color:#b32424;border-color:#b32424;box-shadow:none}.mw-ui-button.mw-ui-destructive:disabled{background-color:#c8ccd1;color:#fff;border-color:#c8ccd1}.mw-ui-button.mw-ui-destructive:disabled:hover,.mw-ui-button.mw-ui-destructive:disabled:active{background-color:#c8ccd1;color:#fff;border-color:#c8ccd1;box-shadow:none}.mw-ui-button.mw-ui-destructive.mw-ui-quiet{color:#dd3333}.mw-ui-button.mw-ui-destructive.mw-ui-quiet:hover{background-color:transparent;color:#ff4242}.mw-ui-button.mw-ui-destructive.mw-ui-quiet:active{color:#b32424}.mw-ui-button.mw-ui-destructive.mw-ui-quiet:focus{background-color:transparent;color:#dd3333}.mw-ui-button.mw-ui-big{font-size:1.3em}.mw-ui-button.mw-ui-block{display:block;width:100%;margin-left:auto;margin-right:auto}input.mw-ui-button::-moz-focus-inner,button.mw-ui-button::-moz-focus-inner{margin-top:-1px;margin-bottom:-1px}a.mw-ui-button{text-decoration:none}a.mw-ui-button:hover,a.mw-ui-button:focus{text-decoration:none}.mw-ui-button-group > *{min-width:48px;border-radius:0;float:left}.mw-ui-button-group > *:first-child{border-top-left-radius:2px;border-bottom-left-radius:2px}.mw-ui-button-group > *:not(:first-child){border-left:0}.mw-ui-button-group > *:last-child{border-top-right-radius:2px;border-bottom-right-radius:2px}.mw-ui-button-group .is-on .button{cursor:default}
+.uls-menu{border-radius:2px; font-size:medium}.uls-search,.uls-language-settings-close-block{border-top-right-radius:2px;border-top-left-radius:2px}.uls-language-list{border-bottom-right-radius:2px;border-bottom-left-radius:2px}.uls-menu.callout:before,.uls-menu.callout:after{border-top:10px solid transparent;border-bottom:10px solid transparent;display:inline-block; top:17px;position:absolute;content:''}.uls-menu.callout.selector-right:before{ border-left:10px solid #c8ccd1; right:-11px}.uls-menu.callout.selector-right:after{ border-left:10px solid #fff; right:-10px}.uls-menu.callout.selector-left:before{ border-right:10px solid #c8ccd1; left:-11px}.uls-menu.callout.selector-left:after{ border-right:10px solid #fff; left:-10px}.uls-ui-languages button{margin:5px 15px 5px 0;white-space:nowrap;overflow:hidden}.uls-search-wrapper-wrapper{position:relative;padding-left:40px;margin-top:5px;margin-bottom:5px}.uls-icon-back{background:transparent url(/extensions/UniversalLanguageSelector/resources/images/back-grey-ltr.svg?01868) no-repeat scroll center center;background-size:28px;height:32px;width:40px;display:block;position:absolute;left:0;border-right:1px solid #c8ccd1;opacity:0.8}.uls-icon-back:hover{opacity:1;cursor:pointer}.uls-menu .uls-no-results-view .uls-no-found-more{background-color:#fff}.uls-menu .uls-no-results-view h3{padding:0 28px;margin:0;color:#54595d;font-size:1em;font-weight:normal}   .skin-vector .uls-menu{border-color:#c8ccd1;box-shadow:0 2px 2px 0 rgba(0,0,0,0.25);font-size:0.875em}.skin-vector .uls-search{border-bottom-color:#c8ccd1}.skin-vector .uls-search-label{opacity:0.51;-webkit-transition:opacity 250ms;transition:opacity 250ms}.skin-vector .uls-search-wrapper:hover .uls-search-label{opacity:0.87}.skin-vector .uls-filtersuggestion{color:#72777d}.skin-vector .uls-lcd-region-title{color:#54595d}
+#uls-settings-block{background-color:#f8f9fa;border-top:1px solid #c8ccd1;padding-left:10px;line-height:1.2em;border-radius:0 0 2px 2px}#uls-settings-block > button{background:left top transparent no-repeat;background-size:20px auto;color:#54595d;display:inline-block;margin:8px 15px;border:0;padding:0 0 0 26px;font-size:medium;cursor:pointer}#uls-settings-block > button:hover{color:#202122}#uls-settings-block > button.display-settings-block{background-image:url(/extensions/UniversalLanguageSelector/resources/images/display.svg?b78f7)}#uls-settings-block > button.input-settings-block{background-image:url(/extensions/UniversalLanguageSelector/resources/images/input.svg?e7c85)}.uls-tipsy.uls-tipsy{z-index:1000}</style><style>
+#p-lang .body ul .uls-trigger,#p-lang .pBody ul .uls-trigger{background-image:none;padding:0}#p-lang .mw-interlanguage-selector,#p-lang .mw-interlanguage-selector:active{background-image:url(/extensions/UniversalLanguageSelector/resources/images/language-base20.svg?b7954);background-position:left 4px center;background-repeat:no-repeat;background-size:16px;margin:4px 0 8px;padding:4px 8px 4px 26px;font-size:13px;font-weight:normal;text-align:left;cursor:pointer} .mw-interlanguage-selector.selector-open{background-color:#c8ccd1} .interlanguage-uls-menu:before,.interlanguage-uls-menu:after{border-top:10px solid transparent;border-bottom:10px solid transparent;display:inline-block; top:17px;position:absolute;content:''}.interlanguage-uls-menu.selector-right:before{ border-left:10px solid #c8ccd1; right:-11px}.interlanguage-uls-menu.selector-right:after{ border-left:10px solid #fff; right:-10px}.interlanguage-uls-menu.selector-left:before{ border-right:10px solid #c8ccd1; left:-11px}.interlanguage-uls-menu.selector-left:after{ border-right:10px solid #fff; left:-10px}.mw-body-header .mw-interlanguage-selector,.mw-body-header .mw-interlanguage-selector:active{margin:0;font-weight:bold}</style><meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="./Funtoo Linux First Steps - Funtoo_files/load(2).php">
+<meta name="generator" content="MediaWiki 1.36.2">
+<link rel="shortcut icon" href="https://www.funtoo.org/favicon.png">
+<link rel="search" type="application/opensearchdescription+xml" href="https://www.funtoo.org/opensearch_desc.php" title="Funtoo (en)">
+<link rel="EditURI" type="application/rsd+xml" href="https://www.funtoo.org/api.php?action=rsd">
+<link rel="alternate" type="application/atom+xml" title="Funtoo Atom feed" href="https://www.funtoo.org/index.php?title=Special:RecentChanges&amp;feed=atom">
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Funtoo_Linux_First_Steps rootpage-Funtoo_Linux_First_Steps skin-vector action-view skin-vector-legacy webfonts-changed"><div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice" class="mw-body-content"></div>
+	<div class="mw-indicators mw-body-content">
+	</div>
+	<h1 id="firstHeading" class="firstHeading">Funtoo Linux First Steps</h1>
+	<div id="bodyContent" class="mw-body-content">
+		<div id="siteSub" class="noprint">From Funtoo</div>
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="https://www.funtoo.org/Funtoo_Linux_First_Steps#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="https://www.funtoo.org/Funtoo_Linux_First_Steps#searchInput">Jump to search</a>
+		<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-pt-translate-header noprint nomobile" dir="ltr" lang="en">This page contains <span class="plainlinks"><a class="external text" href="https://www.funtoo.org/index.php?title=Funtoo_Linux_First_Steps&amp;oldid=27777&amp;diff=28582">changes</a></span> which are not marked for translation.</div><div class="mw-parser-output"><div class="mw-pt-languages noprint" lang="en" dir="ltr"><div class="mw-pt-languages-label">Other languages:</div><div class="mw-pt-languages-list"><span class="mw-pt-languages-ui mw-pt-languages-selected mw-pt-progress mw-pt-progress--complete" lang="en">English</span>&nbsp;• ‎<a href="https://www.funtoo.org/Funtoo_Linux_First_Steps/tr" class="mw-pt-progress mw-pt-progress--med" title="Funtoo Linux İlk Adımlar (50% translated)" lang="tr">Türkçe</a>&nbsp;• ‎<a href="https://www.funtoo.org/Funtoo_Linux_First_Steps/es" class="mw-pt-progress mw-pt-progress--complete" title="Funtoo Linux: Primeros pasos (100% translated)" lang="es">español</a>&nbsp;• ‎<a href="https://www.funtoo.org/Funtoo_Linux_First_Steps/pt-br" class="mw-pt-progress mw-pt-progress--complete" title="Funtoo Linux Primeiros Passos (100% translated)" lang="pt-BR">português do Brasil</a>&nbsp;• ‎<a href="https://www.funtoo.org/Funtoo_Linux_First_Steps/zh-cn" class="mw-pt-progress mw-pt-progress--low" title="Funtoo Linux 入门 (38% translated)" lang="zh-Hans-CN">中文（中国大陆）‎</a></div></div>
+<div class="mw-pt-languages"><div class="mw-pt-languages-label">Subpages:</div><div class="mw-pt-languages-list"><div class="subpage_item"><a href="https://www.funtoo.org/Funtoo_Linux_First_Steps/Helpful_Applications_for_Daily_Usage" title="Funtoo Linux First Steps/Helpful Applications for Daily Usage">Helpful Applications for Daily Usage</a></div><div class="subpage_item"><a href="https://www.funtoo.org/Funtoo_Linux_First_Steps/Installing_a_Graphical_Environment" title="Funtoo Linux First Steps/Installing a Graphical Environment">Installing a Graphical Environment</a></div><div class="subpage_item"><a href="https://www.funtoo.org/Funtoo_Linux_First_Steps/Creating_a_User_Account" title="Funtoo Linux First Steps/Creating a User Account">Creating a User Account</a></div></div></div>
+<p>If you are brand new to Gentoo Linux or Funtoo Linux, this page will help you to get familiar with your new system, and how it works.
+</p>
+<h2><span class="mw-headline" id="Intro_to_Emerge:_Installing_an_Editor">Intro to Emerge: Installing an Editor</span></h2>
+<p>By default, Funtoo Linux has the <code>nano</code> and <code>vi</code> editors installed. <code>nano</code> is the default editor.
+</p><p>If you are new to Funtoo Linux, you have probably heard about <code><a href="https://www.funtoo.org/Emerge" title="Emerge">emerge</a></code>, the Funtoo and Gentoo Linux command for installing packages from the Portage tree. Funtoo Linux has a git-based Portage tree, which is located at <code>/var/git/meta-repo</code> by default. It contains scripts called <i>ebuilds</i> that describe how to build and install packages from source. <code>emerge</code> is used to run these scripts and install packages, as follows:
+</p>
+<pre class="code"><span class="code_root">root</span> <span class="code_blue">#</span> <span class="code_input">emerge vim</span>
+</pre>
+<p>An important note about any commands you specify on an <code>emerge</code> command-line -- Portage will automatically add them to your "selected" set, which means that Portage now understands that you want to keep this package updated as part of your system.
+</p><p>Using the <code>--pretend</code> (<code>-p</code>) option, you can see what <code>emerge</code> <i>would</i> do, without actually doing it:
+</p>
+<pre class="code"><span class="code_root">root</span> <span class="code_blue">#</span> <span class="code_input">emerge -p vim</span>
+</pre>
+<p>Another equally handy option is the <code>-a</code>, or <code>--ask</code> option, which will display the packages to be merged, and then ask for confirmation from you as to whether you would like to proceed and merge the packages, or not:
+</p>
+<pre class="code"><span class="code_root">root</span> <span class="code_blue">#</span> <span class="code_input">emerge -a emacs</span>
+
+<span class="code_green">These are the packages that would be merged, in order:</span>
+
+Calculating dependencies... done!
+[<span class="code_green">ebuild  N     </span>] <span class="code_green">app-admin/eselect-emacs-1.13 </span>
+[<span class="code_green">ebuild  N     </span>] <span class="code_green">net-libs/liblockfile-1.09 </span>
+[<span class="code_green">ebuild  N     </span>] <span class="code_green">app-emacs/emacs-common-gentoo-1.3-r1</span>  USE="<span class="code_blue">-X -emacs22icons</span>" 
+[<span class="code_green">ebuild  N     </span>] <span class="code_green"><b>app-editors/emacs-23.4-r1</b></span>  USE="<span class="code_red">alsa gif gpm jpeg png tiff xpm </span><span class="code_blue">-X -Xaw3d </span>(<span class="code_blue">-aqua</span>)<span class="code_blue"> -athena -dbus -gconf -gtk -gzip-el -hesiod -kerberos -livecd -m17n-lib -motif -sound -source -svg -toolkit-scroll-bars -xft</span>" 
+[<span class="code_green">ebuild  N     </span>] <span class="code_green">virtual/emacs-23 </span>
+
+<b>Would you like to merge these packages? [<span class="code_green">Yes</span>/<span class="code_red">No</span>]</b>  <span class="code_input">y</span></pre>
+<h3><span class="mw-headline" id="USE_Variables">USE Variables</span></h3>
+<p>In the above <code>emerge</code> output, you can see some text beginning with <code>USE=</code> on the <code>app-editors/emacs</code> line. This means that this package has a number of optional build-time features which can be controlled using Portage USE variables. 
+</p><p>It is possible to enable USE variables globally in <code>/etc/portage/make.conf</code>, on a per-package basis in <code>/etc/portage/package.use</code>, or as logical sets by using <a href="https://www.funtoo.org/Funtoo_Profiles" title="Funtoo Profiles">Funtoo Profiles</a>. It's recommended that you first take a look at <a href="https://www.funtoo.org/Funtoo_Profiles" title="Funtoo Profiles">Funtoo Profiles</a> and see if there may be sets of USE variables that you want to enable as a group. You can set your system <i>flavor</i> to more accurately reflect the intended use of your Funtoo system, and by doing so, many more USE variables will be set (or unset) to reasonable defaults for your intended use.
+</p><p>These USE variables can be set globally by adding a line such as this to <code>/etc/portage/make.conf</code>:
+</p>
+<div class="note codenote">
+<div class="note-head codenote"><i class="fas fa-code"></i>&nbsp;&nbsp;&nbsp;<code>/etc/portage/make.conf</code> (bash source code) </div><div class="mw-highlight mw-highlight-lang-bash mw-content-ltr" dir="ltr"><pre><span></span><span class="nv">USE</span><span class="o">=</span><span class="s2">"gif jpeg png tiff xpm"</span>
+</pre></div>
+</div>
+<p>Or, alternatively, you can enable just these USE variables for emacs by adding the following line to <code>/etc/portage/package.use</code>:
+</p>
+<div class="note codenote">
+<div class="note-head codenote"><i class="fas fa-code"></i>&nbsp;&nbsp;&nbsp;<code>/etc/portage/package.use</code> (bash source code) </div><div class="mw-highlight mw-highlight-lang-bash mw-content-ltr" dir="ltr"><pre><span></span>app-editors/emacs gif jpeg png tiff xpm
+</pre></div>
+</div>
+<p>However, it's generally best to find a <a href="https://www.funtoo.org/Funtoo_Profiles" title="Funtoo Profiles">Funtoo Profile</a> flavor or mix-in that serves your purpose. For example, setting your system to be a desktop by running <code>epro flavor desktop</code> or adding the appropriate mix-in via <code>epro mix-in +mediaformat-gfx-common</code> gives you more opportunity to dial in sets of related USE variables with a single command.
+</p><p>See the <a href="https://www.funtoo.org/Emerge" title="Emerge">emerge</a> page for more information on various emerge command-line options and best practices.
+</p>
+<h4><span class="mw-headline" id="Default_editor">Default editor</span></h4>
+<p>Funtoo Linux also has a special meta-command called <code>eselect</code>, which can be used to set many default system settings. One of the things it is used for is to set the default editor used by things like <code>crontab -e</code>, etc that will automatically start an editor when run. Here is how to use <code>eselect</code> to change the default system editor:
+</p>
+<pre class="code"><span class="code_root">root</span> <span class="code_blue">#</span> <span class="code_input">eselect editor list</span>
+Available targets for the EDITOR variable:
+  [1]   /bin/nano
+  [2]   /bin/ed
+  [3]   /usr/bin/ex
+  [4]   /usr/bin/vi
+  [ ]   (free form)
+<span class="code_root">root</span> <span class="code_blue">#</span> <span class="code_input">eselect editor set 4</span>
+Setting EDITOR to /usr/bin/vi ...
+Run ". /etc/profile" to update the variable in your shell.</pre>
+<p>After logging in again, or typing <code>source /etc/profile</code> in the current shell, the new system editor will be active.
+</p><p>Note that if you want to use vim instead of a vi through busybox you also need to run:
+</p>
+<pre class="code"><span class="code_root">root</span> <span class="code_blue">#</span> <span class="code_input">eselect vi set vim</span></pre>
+<h3><span class="mw-headline" id="Updating_your_system">Updating your system</span></h3>
+<p>Sometimes, you may want to update the packages on your system. Often, this is done after you run <code>ego sync</code>, which will grab Portage tree updates from the main Funtoo Linux Portage tree:
+</p>
+<pre class="code"><span class="code_root">root</span> <span class="code_blue">#</span> <span class="code_input">ego sync</span>
+<span class="code_green">Syncing meta-repo</span>
+(cd /var/git/meta-repo &amp;&amp; git remote set-branches --add origin master)
+(cd /var/git/meta-repo &amp;&amp; git fetch origin refs/heads/master:refs/remotes/origin/master)
+remote: Counting objects: 95, done.
+remote: Compressing objects: 100% (64/64), done.
+remote: Total 95 (delta 31), reused 95 (delta 31), pack-reused 0
+Unpacking objects: 100% (95/95), done.</pre>
+<p>You may also want to update your system after you have changed USE flag settings. To take advantage of the USE flags you have just enabled, it's necessary to recompile everything that includes them. 
+</p><p>Below, you'll find a recommended <code>emerge</code> command for updating your entire system. The <tt>-a</tt> option will cause <tt>emerge</tt> to prompt you for confirmation before starting the merge:
+</p>
+<pre class="code"><span class="code_root">root</span> <span class="code_blue">#</span> <span class="code_input">emerge -auDN @world</span></pre>
+<p><code>-u</code> tells <code>emerge</code> to update any already-installed but out-of-date packages that we specify on the command-line. The <code>-D</code> option tells <code>emerge</code> to perform a <i>deep</i> dependency tree graph, so it will include sub-dependencies of packages that we have specified on the command line as well. This allows <code>emerge</code> to perform as thorough an update of your system as possible. 
+</p><p>The <code>-N</code> (<code>--newuse</code>) option tells Portage to check for any new USE flags that have been enabled or disabled, and rebuild packages so that all USE flags are set as currently defined in <a href="https://www.funtoo.org/Funtoo_Profiles" title="Funtoo Profiles">Funtoo Profiles</a>, <code>/etc/portage/make.conf</code> and <code>/etc/portage/package.use</code>. 
+</p><p><tt>world</tt> is a "meta-package" or "package set" which includes every package that you have manually installed plus all packages in the system set. If you want to see a list of all these packages, look at <code>/var/lib/portage/world</code>:
+</p>
+<pre class="code"><span class="code_root">root</span> <span class="code_blue">#</span> <span class="code_input">cat /var/lib/portage/world</span>
+app-editors/vim
+app-portage/eix
+app-portage/gentoolkit
+dev-vcs/git
+net-misc/bridge-utils
+net-misc/dhcpcd
+net-misc/keychain
+sys-apps/gptfdisk
+sys-apps/pciutils
+sys-devel/bc
+sys-fs/reiserfsprogs
+sys-kernel/vanilla-sources</pre>
+<h4><span class="mw-headline" id="Updating_a_few_packages">Updating a few packages</span></h4>
+<p>If we simply wanted to rebuild a few packages to reflect updated USE flag settings, we could specify it instead of <tt>world</tt>. Be sure to include the <tt>-N</tt> option:
+</p>
+<pre class="code"><span class="code_root">root</span> <span class="code_blue">#</span> <span class="code_input">emerge -auDN vim emacs</span>
+</pre>
+<!-- 
+NewPP limit report
+Cached time: 20240103131400
+Cache expiry: 86400
+Dynamic content: false
+Complications: []
+CPU time usage: 0.037 seconds
+Real time usage: 0.053 seconds
+Preprocessor visited node count: 509/1000000
+Post‐expand include size: 3442/2097152 bytes
+Template argument size: 2927/2097152 bytes
+Highest expansion depth: 7/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 4889/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   26.632      1 -total
+ 61.92%   16.492     10 Template:F
+ 18.21%    4.849      2 Template:File
+  9.95%    2.651      1 Template:Subpages
+  6.30%    1.678      6 Template:Console
+  5.86%    1.561     29 Template:C
+  4.21%    1.121      3 Template:Subpages/Item
+-->
+
+<!-- Saved in parser cache with key new_wiki:pcache:idhash:675-0!canonical and timestamp 20240103131400 and revision id 28582. Serialized with JSON.
+ -->
+</div>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://www.funtoo.org/index.php?title=Funtoo_Linux_First_Steps&amp;oldid=28582">https://www.funtoo.org/index.php?title=Funtoo_Linux_First_Steps&amp;oldid=28582</a>"</div></div>
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="https://www.funtoo.org/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="https://www.funtoo.org/Category:HOWTO" title="Category:HOWTO">HOWTO</a></li><li><a href="https://www.funtoo.org/Category:Install" title="Category:Install">Install</a></li><li><a href="https://www.funtoo.org/Category:Featured" title="Category:Featured">Featured</a></li></ul></div></div>
+	</div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+	<div id="mw-head">
+		<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-personal" class="mw-portlet mw-portlet-personal vector-menu" aria-labelledby="p-personal-label" role="navigation">
+	<h3 id="p-personal-label" class="vector-menu-heading">
+		<span>Personal tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		<ul class="vector-menu-content-list"><li id="pt-uls" class="active"><a href="https://www.funtoo.org/Funtoo_Linux_First_Steps#" class="uls-trigger">English</a></li><li id="pt-login"><a href="https://www.funtoo.org/index.php?title=Special:UserLogin&amp;returnto=Funtoo+Linux+First+Steps" title="You are encouraged to log in; however, it is not mandatory [alt-shift-o]" accesskey="o">Log in</a></li></ul>
+		
+	</div>
+</nav>
+
+		<div id="left-navigation">
+			<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-namespaces" class="mw-portlet mw-portlet-namespaces vector-menu vector-menu-tabs" aria-labelledby="p-namespaces-label" role="navigation">
+	<h3 id="p-namespaces-label" class="vector-menu-heading">
+		<span>Namespaces</span>
+	</h3>
+	<div class="vector-menu-content">
+		<ul class="vector-menu-content-list"><li id="ca-nstab-main" class="selected"><a href="https://www.funtoo.org/Funtoo_Linux_First_Steps" title="View the content page [alt-shift-c]" accesskey="c">Page</a></li><li id="ca-talk"><a href="https://www.funtoo.org/Talk:Funtoo_Linux_First_Steps" rel="discussion" title="Discussion about the content page [alt-shift-t]" accesskey="t">Discussion</a></li></ul>
+		
+	</div>
+</nav>
+
+			<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-variants" class="mw-portlet mw-portlet-variants emptyPortlet vector-menu vector-menu-dropdown" aria-labelledby="p-variants-label" role="navigation">
+	<input type="checkbox" class="vector-menu-checkbox webfonts-changed" aria-labelledby="p-variants-label">
+	<h3 id="p-variants-label" class="vector-menu-heading">
+		<span>Variants</span>
+	</h3>
+	<div class="vector-menu-content">
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+		</div>
+		<div id="right-navigation">
+			<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-views" class="mw-portlet mw-portlet-views vector-menu vector-menu-tabs" aria-labelledby="p-views-label" role="navigation">
+	<h3 id="p-views-label" class="vector-menu-heading">
+		<span>Views</span>
+	</h3>
+	<div class="vector-menu-content">
+		<ul class="vector-menu-content-list"><li id="ca-view" class="selected collapsible"><a href="https://www.funtoo.org/Funtoo_Linux_First_Steps">Read</a></li><li id="ca-viewsource" class="collapsible"><a href="https://www.funtoo.org/index.php?title=Funtoo_Linux_First_Steps&amp;action=edit" title="This page is protected.
+You can view its source [alt-shift-e]" accesskey="e">View source</a></li><li id="ca-history" class="collapsible"><a href="https://www.funtoo.org/index.php?title=Funtoo_Linux_First_Steps&amp;action=history" title="Past revisions of this page [alt-shift-h]" accesskey="h">View history</a></li></ul>
+		
+	</div>
+</nav>
+
+			<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-cactions" class="mw-portlet mw-portlet-cactions emptyPortlet vector-menu vector-menu-dropdown" aria-labelledby="p-cactions-label" role="navigation">
+	<input type="checkbox" class="vector-menu-checkbox webfonts-changed" aria-labelledby="p-cactions-label">
+	<h3 id="p-cactions-label" class="vector-menu-heading">
+		<span>More</span>
+	</h3>
+	<div class="vector-menu-content">
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+			<div id="p-search" role="search">
+	<h3>
+		<label for="searchInput">Search</label>
+	</h3>
+	<form action="https://www.funtoo.org/index.php" id="searchform">
+		<div id="simpleSearch" data-search-loc="header-navigation">
+			<input type="search" name="search" placeholder="Search Funtoo" autocapitalize="sentences" title="Search Funtoo [alt-shift-f]" accesskey="f" id="searchInput" class="webfonts-changed">
+			<input type="hidden" name="title" value="Special:Search" class="webfonts-changed">
+			<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton webfonts-changed">
+			<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton webfonts-changed">
+		</div>
+	</form>
+</div>
+
+		</div>
+	</div>
+	
+<div id="mw-panel">
+	<div id="p-logo" role="banner">
+		<a class="mw-wiki-logo" href="https://www.funtoo.org/Welcome" title="Visit the main page"></a>
+	</div>
+	<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-foo" class="mw-portlet mw-portlet-foo emptyPortlet vector-menu vector-menu-portal portal" aria-labelledby="p-foo-label" role="navigation">
+	<h3 id="p-foo-label" class="vector-menu-heading">
+		<span>foo</span>
+	</h3>
+	<div class="vector-menu-content">
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+	<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-Funtoo_Linux" class="mw-portlet mw-portlet-Funtoo_Linux vector-menu vector-menu-portal portal" aria-labelledby="p-Funtoo_Linux-label" role="navigation">
+	<h3 id="p-Funtoo_Linux-label" class="vector-menu-heading">
+		<span>Funtoo Linux</span>
+	</h3>
+	<div class="vector-menu-content">
+		<ul class="vector-menu-content-list"><li id="n-Install"><a href="https://www.funtoo.org/Install/Introduction">Install</a></li><li id="n-Support-Matrix"><a href="https://www.funtoo.org/Support_Matrix">Support Matrix</a></li><li id="n-Download.C2.A0"><a href="https://www.funtoo.org/Subarches">Download&nbsp;</a></li><li id="n-Find-your-CPU"><a href="https://www.funtoo.org/Funtoo_CPU_Database">Find your CPU</a></li><li id="n-FAQ"><a href="https://www.funtoo.org/FAQ">FAQ</a></li></ul>
+		
+	</div>
+</nav>
+<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-Infrastructure" class="mw-portlet mw-portlet-Infrastructure vector-menu vector-menu-portal portal" aria-labelledby="p-Infrastructure-label" role="navigation">
+	<h3 id="p-Infrastructure-label" class="vector-menu-heading">
+		<span>Infrastructure</span>
+	</h3>
+	<div class="vector-menu-content">
+		<ul class="vector-menu-content-list"><li id="n-YouTube-Channel"><a href="https://www.youtube.com/channel/UCKmOY6p3c9hxv3vJMAF8vVw">YouTube Channel</a></li><li id="n-Discord"><a href="https://discord.gg/BNUSpUU">Discord</a></li><li id="n-Report-a-Bug"><a href="https://bugs.funtoo.org/">Report a Bug</a></li><li id="n-Submit-Code"><a href="https://code.funtoo.org/">Submit Code</a></li><li id="n-Forums"><a href="http://forums.funtoo.org/">Forums</a></li><li id="n-Server-Status"><a href="https://status.funtoo.org/">Server Status</a></li><li id="n-Sponsors"><a href="https://www.funtoo.org/Sponsors">Sponsors</a></li></ul>
+		
+	</div>
+</nav>
+<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-Projects" class="mw-portlet mw-portlet-Projects vector-menu vector-menu-portal portal" aria-labelledby="p-Projects-label" role="navigation">
+	<h3 id="p-Projects-label" class="vector-menu-heading">
+		<span>Projects</span>
+	</h3>
+	<div class="vector-menu-content">
+		<ul class="vector-menu-content-list"><li id="n-Keychain"><a href="https://www.funtoo.org/Keychain">Keychain</a></li><li id="n-Containers"><a href="https://www.funtoo.org/Funtoo_Containers">Containers</a></li><li id="n-Metro"><a href="https://www.funtoo.org/Metro">Metro</a></li></ul>
+		
+	</div>
+</nav>
+<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-Misc" class="mw-portlet mw-portlet-Misc vector-menu vector-menu-portal portal" aria-labelledby="p-Misc-label" role="navigation">
+	<h3 id="p-Misc-label" class="vector-menu-heading">
+		<span>Misc</span>
+	</h3>
+	<div class="vector-menu-content">
+		<ul class="vector-menu-content-list"><li id="n-Ebuilds"><a href="https://www.funtoo.org/Ebuilds">Ebuilds</a></li><li id="n-Wiki-Editing-Guidelines"><a href="https://www.funtoo.org/Help:Funtoo_Editing_Guidelines">Wiki Editing Guidelines</a></li><li id="n-Development-Guide"><a href="https://www.funtoo.org/Development_Guide">Development Guide</a></li></ul>
+		
+	</div>
+</nav>
+<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-Categories" class="mw-portlet mw-portlet-Categories vector-menu vector-menu-portal portal" aria-labelledby="p-Categories-label" role="navigation">
+	<h3 id="p-Categories-label" class="vector-menu-heading">
+		<span>Categories</span>
+	</h3>
+	<div class="vector-menu-content">
+		<ul class="vector-menu-content-list"><li id="n-Articles"><a href="https://www.funtoo.org/Category:Articles">Articles</a></li><li id="n-HOWTOs"><a href="https://www.funtoo.org/Category:HOWTO">HOWTOs</a></li><li id="n-Tutorials"><a href="https://www.funtoo.org/Category:Tutorial">Tutorials</a></li><li id="n-Networking"><a href="https://www.funtoo.org/Category:Networking">Networking</a></li><li id="n-Portage"><a href="https://www.funtoo.org/Category:Portage">Portage</a></li></ul>
+		
+	</div>
+</nav>
+<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-Links" class="mw-portlet mw-portlet-Links vector-menu vector-menu-portal portal" aria-labelledby="p-Links-label" role="navigation">
+	<h3 id="p-Links-label" class="vector-menu-heading">
+		<span>Links</span>
+	</h3>
+	<div class="vector-menu-content">
+		<ul class="vector-menu-content-list"><li id="n-recentchanges"><a href="https://www.funtoo.org/Special:RecentChanges" title="A list of recent changes in the wiki [alt-shift-r]" accesskey="r">Recent changes</a></li><li id="n-MediaWiki-Help"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">MediaWiki Help</a></li></ul>
+		
+	</div>
+</nav>
+<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-tb" class="mw-portlet mw-portlet-tb vector-menu vector-menu-portal portal" aria-labelledby="p-tb-label" role="navigation">
+	<h3 id="p-tb-label" class="vector-menu-heading">
+		<span>Tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		<ul class="vector-menu-content-list"><li id="t-whatlinkshere"><a href="https://www.funtoo.org/Special:WhatLinksHere/Funtoo_Linux_First_Steps" title="A list of all wiki pages that link here [alt-shift-j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="https://www.funtoo.org/Special:RecentChangesLinked/Funtoo_Linux_First_Steps" rel="nofollow" title="Recent changes in pages linked from this page [alt-shift-k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="https://www.funtoo.org/Special:SpecialPages" title="A list of all special pages [alt-shift-q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="javascript:print();" rel="alternate" title="Printable version of this page [alt-shift-p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="https://www.funtoo.org/index.php?title=Funtoo_Linux_First_Steps&amp;oldid=28582" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="https://www.funtoo.org/index.php?title=Funtoo_Linux_First_Steps&amp;action=info" title="More information about this page">Page information</a></li><li id="t-cargopagevalueslink"><a href="https://www.funtoo.org/index.php?title=Funtoo_Linux_First_Steps&amp;action=pagevalues" rel="cargo-pagevalues">Page values</a></li></ul>
+		
+	</div>
+</nav>
+
+	
+</div>
+
+</div>
+<footer id="footer" class="mw-footer" role="contentinfo">
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on August 19, 2019, at 21:51.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://www.funtoo.org/Funtoo:Privacy_policy" title="Funtoo:Privacy policy">Policies/Contact Us</a></li>
+	<li id="footer-places-about"><a href="https://www.funtoo.org/Funtoo:About" class="mw-redirect" title="Funtoo:About">About Funtoo</a></li>
+	<li id="footer-places-disclaimer"><a href="https://www.funtoo.org/Funtoo:General_disclaimer" title="Funtoo:General disclaimer">Disclaimers</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="./Funtoo Linux First Steps - Funtoo_files/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"></a></li>
+</ul>
+
+</footer>
+
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.037","walltime":"0.053","ppvisitednodes":{"value":509,"limit":1000000},"postexpandincludesize":{"value":3442,"limit":2097152},"templateargumentsize":{"value":2927,"limit":2097152},"expansiondepth":{"value":7,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":4889,"limit":5000000},"timingprofile":["100.00%   26.632      1 -total"," 61.92%   16.492     10 Template:F"," 18.21%    4.849      2 Template:File","  9.95%    2.651      1 Template:Subpages","  6.30%    1.678      6 Template:Console","  5.86%    1.561     29 Template:C","  4.21%    1.121      3 Template:Subpages/Item"]},"cachereport":{"timestamp":"20240103131400","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":153});});</script>
+</body></html>

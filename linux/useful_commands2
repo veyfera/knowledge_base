@@ -28,3 +28,4 @@ grep -Eiwo -m1 'nvidia|amd|ati|intel' /var/log/Xorg.0.log   #see which GPU is us
 grep -R linuxize.com /etc   #search for 'linuxize.com' recursively in all files in '/etc'
 grep -rli 'old-word' * | xargs -i@ sed -i 's/old-word/new-word/g' @     #replace old-word with new-word recursively
 python -mjson.tool croc_data.json > /dev/null   #validate json file
+

@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)https://www.funtoo.org/InstallPrintable -->
+<html class="client-js" lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Funtoo Linux Installation Guide - Funtoo</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"mdy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"a4a55df4059b0f080c6ca2d8","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"InstallPrintable","wgTitle":"InstallPrintable","wgCurRevisionId":38106,"wgRevisionId":38106,"wgArticleId":10076,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["HOWTO","Install","Official Documentation"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"InstallPrintable","wgRelevantArticleId":10076,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgULSAcceptLanguageList":
+["en-us","en"],"wgULSCurrentAutonym":"English","wgCargoDefaultQueryLimit":100,"wgCargoMapClusteringMinimum":80,"wgCargoMonthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"wgCargoMonthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgCargoWeekDays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"wgCargoWeekDaysShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"wgPageFormsTargetName":null,"wgPageFormsAutocompleteValues":[],"wgPageFormsAutocompleteOnAllChars":!1,"wgPageFormsFieldProperties":[],"wgPageFormsCargoFields":[],"wgPageFormsDependentFields":[],"wgPageFormsCalendarValues":[],"wgPageFormsCalendarParams":[],"wgPageFormsCalendarHTML":null,"wgPageFormsGridValues":[],"wgPageFormsGridParams":[],"wgPageFormsContLangYes":null,"wgPageFormsContLangNo":null,"wgPageFormsContLangMonths":[],"wgPageFormsHeightForMinimizingInstances":800,
+"wgPageFormsShowOnSelect":[],"wgPageFormsScriptPath":"/extensions/PageForms","edgValues":[],"wgPageFormsEDSettings":null,"wgAmericanDates":!0,"egMapsScriptPath":"/extensions/Maps/","egMapsDebugJS":!1,"egMapsAvailableServices":["leaflet","googlemaps3"],"egMapsLeafletLayersApiKeys":{"MapBox":"","MapQuestOpen":"","Thunderforest":"","GeoportailFrance":""},"wgULSPosition":"personal","wgULSisCompactLinksEnabled":!0,"wgTranslatePageTranslation":"source"};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","ext.translate":"ready","ext.translate.tag.languages":"ready","ext.fontawesome":"ready","ext.fontawesome.fas":"ready","skins.vector.styles.legacy":"ready","ext.uls.pt":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","skins.vector.legacy.js","ext.uls.compactlinks","ext.uls.interface"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="./Funtoo Linux Installation Guide - Funtoo_files/load.php">
+<script async="" src="./Funtoo Linux Installation Guide - Funtoo_files/load(1).php"></script>
+<style>
+.mw-ui-button{background-color:#f8f9fa;color:#202122;display:inline-block;-moz-box-sizing:border-box;box-sizing:border-box;min-height:32px;min-width:4em;max-width:28.75em;margin:0;padding:5px 12px;border:1px solid #a2a9b1;border-radius:2px;cursor:pointer;vertical-align:middle;font-family:inherit;font-size:1em;font-weight:bold;line-height:1.28571429em;text-align:center;-webkit-appearance:none}.mw-ui-button:visited{color:#202122}.mw-ui-button:hover{background-color:#ffffff;color:#404244;border-color:#a2a9b1}.mw-ui-button:focus{background-color:#ffffff;color:#202122;border-color:#3366cc;box-shadow:inset 0 0 0 1px #3366cc,inset 0 0 0 2px #ffffff;outline-width:0}.mw-ui-button:focus::-moz-focus-inner{border-color:transparent;padding:0}.mw-ui-button:active,.mw-ui-button.is-on{background-color:#c8ccd1;color:#000000;border-color:#72777d;box-shadow:none}.mw-ui-button:disabled{background-color:#c8ccd1;color:#ffffff;border-color:#c8ccd1;cursor:default}.mw-ui-button:disabled:hover,.mw-ui-button:disabled:active{background-color:#c8ccd1;color:#ffffff;box-shadow:none;border-color:#c8ccd1}.mw-ui-button:not(:disabled){-webkit-transition:background-color 100ms,color 100ms,border-color 100ms,box-shadow 100ms;transition:background-color 100ms,color 100ms,border-color 100ms,box-shadow 100ms}.mw-ui-button.mw-ui-quiet,.mw-ui-button.mw-ui-quiet.mw-ui-progressive,.mw-ui-button.mw-ui-quiet.mw-ui-destructive{background-color:transparent;color:#202122;min-height:32px;border-color:transparent;font-weight:bold}.mw-ui-button.mw-ui-quiet:hover,.mw-ui-button.mw-ui-quiet.mw-ui-progressive:hover,.mw-ui-button.mw-ui-quiet.mw-ui-destructive:hover{background-color:#f8f9fa;color:#404244;border-color:transparent;box-shadow:none}.mw-ui-button.mw-ui-quiet:active,.mw-ui-button.mw-ui-quiet.mw-ui-progressive:active,.mw-ui-button.mw-ui-quiet.mw-ui-destructive:active{background-color:#eaecf0;color:#000000;border-color:#72777d}.mw-ui-button.mw-ui-quiet:focus,.mw-ui-button.mw-ui-quiet.mw-ui-progressive:focus,.mw-ui-button.mw-ui-quiet.mw-ui-destructive:focus{background-color:transparent;color:#202122;border-color:#3366cc;box-shadow:none}.mw-ui-button.mw-ui-quiet:disabled,.mw-ui-button.mw-ui-quiet.mw-ui-progressive:disabled,.mw-ui-button.mw-ui-quiet.mw-ui-destructive:disabled,.mw-ui-button.mw-ui-quiet:disabled:hover,.mw-ui-button.mw-ui-quiet.mw-ui-progressive:disabled:hover,.mw-ui-button.mw-ui-quiet.mw-ui-destructive:disabled:hover,.mw-ui-button.mw-ui-quiet:disabled:active,.mw-ui-button.mw-ui-quiet.mw-ui-progressive:disabled:active,.mw-ui-button.mw-ui-quiet.mw-ui-destructive:disabled:active{background-color:transparent;color:#72777d;border-color:transparent}.mw-ui-button.mw-ui-progressive{background-color:#3366cc;color:#fff;border:1px solid #3366cc}.mw-ui-button.mw-ui-progressive:hover{background-color:#447ff5;border-color:#447ff5}.mw-ui-button.mw-ui-progressive:focus{box-shadow:inset 0 0 0 1px #3366cc,inset 0 0 0 2px #ffffff}.mw-ui-button.mw-ui-progressive:active,.mw-ui-button.mw-ui-progressive.is-on{background-color:#2a4b8d;border-color:#2a4b8d;box-shadow:none}.mw-ui-button.mw-ui-progressive:disabled{background-color:#c8ccd1;color:#fff;border-color:#c8ccd1}.mw-ui-button.mw-ui-progressive:disabled:hover,.mw-ui-button.mw-ui-progressive:disabled:active{background-color:#c8ccd1;color:#fff;border-color:#c8ccd1;box-shadow:none}.mw-ui-button.mw-ui-progressive.mw-ui-quiet{color:#3366cc}.mw-ui-button.mw-ui-progressive.mw-ui-quiet:hover{background-color:transparent;color:#447ff5}.mw-ui-button.mw-ui-progressive.mw-ui-quiet:active{color:#2a4b8d}.mw-ui-button.mw-ui-progressive.mw-ui-quiet:focus{background-color:transparent;color:#3366cc}.mw-ui-button.mw-ui-destructive{background-color:#dd3333;color:#fff;border:1px solid #dd3333}.mw-ui-button.mw-ui-destructive:hover{background-color:#ff4242;border-color:#ff4242}.mw-ui-button.mw-ui-destructive:focus{box-shadow:inset 0 0 0 1px #dd3333,inset 0 0 0 2px #ffffff}.mw-ui-button.mw-ui-destructive:active,.mw-ui-button.mw-ui-destructive.is-on{background-color:#b32424;border-color:#b32424;box-shadow:none}.mw-ui-button.mw-ui-destructive:disabled{background-color:#c8ccd1;color:#fff;border-color:#c8ccd1}.mw-ui-button.mw-ui-destructive:disabled:hover,.mw-ui-button.mw-ui-destructive:disabled:active{background-color:#c8ccd1;color:#fff;border-color:#c8ccd1;box-shadow:none}.mw-ui-button.mw-ui-destructive.mw-ui-quiet{color:#dd3333}.mw-ui-button.mw-ui-destructive.mw-ui-quiet:hover{background-color:transparent;color:#ff4242}.mw-ui-button.mw-ui-destructive.mw-ui-quiet:active{color:#b32424}.mw-ui-button.mw-ui-destructive.mw-ui-quiet:focus{background-color:transparent;color:#dd3333}.mw-ui-button.mw-ui-big{font-size:1.3em}.mw-ui-button.mw-ui-block{display:block;width:100%;margin-left:auto;margin-right:auto}input.mw-ui-button::-moz-focus-inner,button.mw-ui-button::-moz-focus-inner{margin-top:-1px;margin-bottom:-1px}a.mw-ui-button{text-decoration:none}a.mw-ui-button:hover,a.mw-ui-button:focus{text-decoration:none}.mw-ui-button-group > *{min-width:48px;border-radius:0;float:left}.mw-ui-button-group > *:first-child{border-top-left-radius:2px;border-bottom-left-radius:2px}.mw-ui-button-group > *:not(:first-child){border-left:0}.mw-ui-button-group > *:last-child{border-top-right-radius:2px;border-bottom-right-radius:2px}.mw-ui-button-group .is-on .button{cursor:default}
+.uls-menu{border-radius:2px; font-size:medium}.uls-search,.uls-language-settings-close-block{border-top-right-radius:2px;border-top-left-radius:2px}.uls-language-list{border-bottom-right-radius:2px;border-bottom-left-radius:2px}.uls-menu.callout:before,.uls-menu.callout:after{border-top:10px solid transparent;border-bottom:10px solid transparent;display:inline-block; top:17px;position:absolute;content:''}.uls-menu.callout.selector-right:before{ border-left:10px solid #c8ccd1; right:-11px}.uls-menu.callout.selector-right:after{ border-left:10px solid #fff; right:-10px}.uls-menu.callout.selector-left:before{ border-right:10px solid #c8ccd1; left:-11px}.uls-menu.callout.selector-left:after{ border-right:10px solid #fff; left:-10px}.uls-ui-languages button{margin:5px 15px 5px 0;white-space:nowrap;overflow:hidden}.uls-search-wrapper-wrapper{position:relative;padding-left:40px;margin-top:5px;margin-bottom:5px}.uls-icon-back{background:transparent url(/extensions/UniversalLanguageSelector/resources/images/back-grey-ltr.svg?01868) no-repeat scroll center center;background-size:28px;height:32px;width:40px;display:block;position:absolute;left:0;border-right:1px solid #c8ccd1;opacity:0.8}.uls-icon-back:hover{opacity:1;cursor:pointer}.uls-menu .uls-no-results-view .uls-no-found-more{background-color:#fff}.uls-menu .uls-no-results-view h3{padding:0 28px;margin:0;color:#54595d;font-size:1em;font-weight:normal}   .skin-vector .uls-menu{border-color:#c8ccd1;box-shadow:0 2px 2px 0 rgba(0,0,0,0.25);font-size:0.875em}.skin-vector .uls-search{border-bottom-color:#c8ccd1}.skin-vector .uls-search-label{opacity:0.51;-webkit-transition:opacity 250ms;transition:opacity 250ms}.skin-vector .uls-search-wrapper:hover .uls-search-label{opacity:0.87}.skin-vector .uls-filtersuggestion{color:#72777d}.skin-vector .uls-lcd-region-title{color:#54595d}
+#uls-settings-block{background-color:#f8f9fa;border-top:1px solid #c8ccd1;padding-left:10px;line-height:1.2em;border-radius:0 0 2px 2px}#uls-settings-block > button{background:left top transparent no-repeat;background-size:20px auto;color:#54595d;display:inline-block;margin:8px 15px;border:0;padding:0 0 0 26px;font-size:medium;cursor:pointer}#uls-settings-block > button:hover{color:#202122}#uls-settings-block > button.display-settings-block{background-image:url(/extensions/UniversalLanguageSelector/resources/images/display.svg?b78f7)}#uls-settings-block > button.input-settings-block{background-image:url(/extensions/UniversalLanguageSelector/resources/images/input.svg?e7c85)}.uls-tipsy.uls-tipsy{z-index:1000}</style><style>
+#p-lang .body ul .uls-trigger,#p-lang .pBody ul .uls-trigger{background-image:none;padding:0}#p-lang .mw-interlanguage-selector,#p-lang .mw-interlanguage-selector:active{background-image:url(/extensions/UniversalLanguageSelector/resources/images/language-base20.svg?b7954);background-position:left 4px center;background-repeat:no-repeat;background-size:16px;margin:4px 0 8px;padding:4px 8px 4px 26px;font-size:13px;font-weight:normal;text-align:left;cursor:pointer} .mw-interlanguage-selector.selector-open{background-color:#c8ccd1} .interlanguage-uls-menu:before,.interlanguage-uls-menu:after{border-top:10px solid transparent;border-bottom:10px solid transparent;display:inline-block; top:17px;position:absolute;content:''}.interlanguage-uls-menu.selector-right:before{ border-left:10px solid #c8ccd1; right:-11px}.interlanguage-uls-menu.selector-right:after{ border-left:10px solid #fff; right:-10px}.interlanguage-uls-menu.selector-left:before{ border-right:10px solid #c8ccd1; left:-11px}.interlanguage-uls-menu.selector-left:after{ border-right:10px solid #fff; left:-10px}.mw-body-header .mw-interlanguage-selector,.mw-body-header .mw-interlanguage-selector:active{margin:0;font-weight:bold}</style><meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="./Funtoo Linux Installation Guide - Funtoo_files/load(2).php">
+<meta name="generator" content="MediaWiki 1.36.2">
+<link rel="shortcut icon" href="https://www.funtoo.org/favicon.png">
+<link rel="search" type="application/opensearchdescription+xml" href="https://www.funtoo.org/opensearch_desc.php" title="Funtoo (en)">
+<link rel="EditURI" type="application/rsd+xml" href="https://www.funtoo.org/api.php?action=rsd">
+<link rel="alternate" type="application/atom+xml" title="Funtoo Atom feed" href="https://www.funtoo.org/index.php?title=Special:RecentChanges&amp;feed=atom">
+<!-- Begin Extension:CSS --><link rel="stylesheet" href="data:text/css;charset=UTF-8;base64,Zmlyc3RIZWFkaW5nIHsKICBkaXNwbGF5OiBub25lOwp9"><!-- End Extension:CSS -->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-InstallPrintable rootpage-InstallPrintable skin-vector action-view skin-vector-legacy webfonts-changed"><div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice" class="mw-body-content"></div>
+	<div class="mw-indicators mw-body-content">
+	</div>
+	<h1 id="firstHeading" class="firstHeading">Funtoo Linux Installation Guide</h1>
+	<div id="bodyContent" class="mw-body-content">
+		<div id="siteSub" class="noprint">From Funtoo</div>
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="https://www.funtoo.org/InstallPrintable#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="https://www.funtoo.org/InstallPrintable#searchInput">Jump to search</a>
+		<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div class="mw-pt-languages noprint" lang="en" dir="ltr"><div class="mw-pt-languages-label">Other languages:</div><div class="mw-pt-languages-list"><span class="mw-pt-languages-ui mw-pt-languages-selected mw-pt-progress mw-pt-progress--complete" lang="en">English</span>&nbsp;• ‎<a href="https://www.funtoo.org/InstallPrintable/pt-br" class="mw-pt-progress mw-pt-progress--complete" title="InstallPrintable/pt-br (100% translated)" lang="pt-BR">português do Brasil</a></div></div>
+<div class="note">
+<div class="note-head"><i class="fas fa-comment-alt"></i>&nbsp;&nbsp;&nbsp;Note</div><div class="note-body">
+<p>This page is a printable single-page version of the full Install instructions. Translators: this page should be translated but the bulk of the translation happens on the <a href="https://www.funtoo.org/Install" class="mw-redirect" title="Install">Install</a> page and subpages.
+</p>
+</div></div>
+<h2><span class="mw-headline" id="Introduction">Introduction</span></h2>
+<pre class="code"><span class="code_root">root</span> <span class="code_blue">#</span> <span class="code_input">Welcome to Funtoo Linux!</span></pre>
+<p>Welcome to Funtoo Linux! This document was written to help you install Funtoo Linux on PC-compatible systems, while keeping distracting options regarding system configuration to a minimum.
+</p><p><i>If you're new to installing a Gentoo-based Linux, or new to Linux entirely -- welcome!</i> We have attempted to make these installation instructions understandable to new users as well. We encourage all new users to read <a href="https://www.funtoo.org/Wolf_Pack_Philosophy" title="Wolf Pack Philosophy">Wolf Pack Philosophy</a> to understand some of the distinctives of the Funtoo community.
+</p><p>Before we get started, please review the following important information:
+</p>
+<div style="width: 100%; text-align: center; margin-top: 1.5em; margin-bottom: 1em;"><div style="border-radius: 20px; padding: 8px 15px 8px 15px; background-color: rgb(217 217 217); -webkit-box-shadow: 3px 3px 5px 0px rgba(217,217,217,1); -moz-box-shadow: 3px 3px 5px 0px rgba(217,217,217,1); box-shadow: 3px 3px 5px 0px rgba(217,217,217,1);">Our desktop environment stages (GNOME, Cinnamon, etc.) now support seamless installation on <b>VMware Workstation Pro</b> virtual machines. We highly recommend you enable <b>3D Accelerated Video</b> for your VM, which is not enabled by default. <a href="https://www.funtoo.org/Funtoo_VMware_Guest_Support" title="Funtoo VMware Guest Support">Click here for more info</a>.</div></div>
+<div style="background-color: #eeefe3; border-radius: 8px; padding: 10px;">
+<dl><dt>Current Release</dt>
+<dd>The current release of Funtoo Linux is <code>next</code>, sometimes referred to as <code>next-release</code>. This is actually a (mostly) rolling release with an emphasis on being current. We also have <code>1.4-release</code> available, which is a rolling release with an emphasis on long-term stability. However, we recommend for all users to use <code>next</code> if possible and consider <code>1.4-release</code> to be a legacy release unless you have very specific needs for something in <code>1.4-release</code>.</dd></dl>
+<dl><dt>Development Model</dt>
+<dd>Funtoo Linux is a <i>community-developed</i> Linux meta-distribution. If you use Funtoo Linux, you are welcome to contribute to its development via code.funtoo.org without going through any special procedure or complicated approval process. See <a href="https://www.funtoo.org/Development_Guide" title="Development Guide">Development Guide</a> for more information on how to contribute to Funtoo. We also have <a class="external text" href="https://www.youtube.com/playlist?list=PL2YVrx9jFJOd8aBrJBbXPir8zCMcK3Ip8">YouTube video tutorials</a> to help you get started.</dd></dl>
+<dl><dt>Support Matrix</dt>
+<dd>Please use our <a href="https://www.funtoo.org/Support_Matrix" title="Support Matrix">Support Matrix</a> to familiarize yourself with the technologies we do -- and do not -- support.</dd></dl>
+<dl><dt>Documentation Styles</dt>
+<dd>We now offer the ability to <a href="https://www.funtoo.org/Install/Introduction" title="Install/Introduction">read and browse the Install Guide section-by-section</a>. Online users may find this more convenient.</dd></dl>
+<dl><dt>Running Steam</dt>
+<dd>We have recently released official Steam Docker Images as well as support for Steam on Flatpak -- these are the officially-supported way to run Steam on Funtoo. See <a href="https://www.funtoo.org/Steam" title="Steam">Steam</a> for more information.</dd></dl>
+<dl><dt>Containers</dt>
+<dd><a href="https://www.funtoo.org/LXD" title="LXD">LXD</a> container management as well as Docker is officially supported. Please see <a href="https://www.funtoo.org/Chroot_and_Containers" title="Chroot and Containers">Chroot and Containers</a> for an incomplete but growing list of container technologies available, along with links to further documentation.</dd></dl>
+<dl><dt>New Fchroot Tool</dt>
+<dd>Our new <a class="external text" href="https://code.funtoo.org/bitbucket/users/drobbins/repos/fchroot/browse">fchroot tool</a> is now available to allow you to run ARM and RISCV environments on PC-compatible hardware. This is a very effective tool for accelerating building of large pieces of software on resource-constrained ARM systems. See the <a class="external text" href="https://code.funtoo.org/bitbucket/users/drobbins/repos/fchroot/browse">code.funtoo.org page</a>, <a href="https://www.funtoo.org/Frankenchroot" title="Frankenchroot">Frankenchroot</a> and <a href="https://www.funtoo.org/Frankenchroot/Live_NFS_Frankenchroot" title="Frankenchroot/Live NFS Frankenchroot">Frankenchroot/Live_NFS_Frankenchroot</a> for set-up information.</dd></dl>
+</div>
+<p>Now that we've covered all that important information, it's time to get started installing Funtoo Linux!
+</p>
+<h3><span class="mw-headline" id="Installation_Overview">Installation Overview</span></h3>
+<p>This is a basic overview of the Funtoo installation process:
+</p>
+<ol><li><a href="https://www.funtoo.org/Install/Get_Acquainted" title="Install/Get Acquainted">Get Acquainted with Funtoo's Culture and Support Matrix</a>.</li>
+<li><a href="https://www.funtoo.org/Install/Download_LiveCD" title="Install/Download LiveCD">Download and boot the Funtoo LiveCD/LiveUSB</a>.</li>
+<li><a href="https://www.funtoo.org/Install/Prepare_Disk" title="Install/Prepare Disk">Prepare your disk</a>.</li>
+<li><a href="https://www.funtoo.org/Install/MBR_Partitioning" title="Install/MBR Partitioning">MBR Partitioning</a>.</li>
+<li><a href="https://www.funtoo.org/Install/GPT_Partitioning" title="Install/GPT Partitioning">GPT Partitioning</a>.</li>
+<li><a href="https://www.funtoo.org/Install/Creating_Filesystems" title="Install/Creating Filesystems">Create</a> and <a href="https://www.funtoo.org/Install/Mounting_Filesystems" title="Install/Mounting Filesystems">mount</a> filesystems.</li>
+<li><a href="https://www.funtoo.org/Install/Setting_the_Date" title="Install/Setting the Date">Setting the Date</a>.</li>
+<li><a href="https://www.funtoo.org/Install/Download_and_Extract_Stage3" title="Install/Download and Extract Stage3">Install the Funtoo stage tarball</a> of your choice.</li>
+<li><a href="https://www.funtoo.org/Install/Chroot" title="Install/Chroot">Chroot into your new system</a>.</li>
+<li><a href="https://www.funtoo.org/Install/Download_Portage_Tree" title="Install/Download Portage Tree">Download the Portage tree</a>.</li>
+<li><a href="https://www.funtoo.org/Install/Configuration_Files" title="Install/Configuration Files">Configure your system</a>.</li>
+<li><a href="https://www.funtoo.org/Install/Introducing_Portage" title="Install/Introducing Portage">Introducing Portage</a>.</li>
+<li><a href="https://www.funtoo.org/Install/Kernel" title="Install/Kernel">Install a kernel</a>.</li>
+<li><a href="https://www.funtoo.org/Install/Bootloader" title="Install/Bootloader">Install a bootloader</a>.</li>
+<li><a href="https://www.funtoo.org/Install/Network" title="Install/Network">Configure the Network</a>.</li>
+<li><a href="https://www.funtoo.org/Install/Finishing" title="Install/Finishing">Complete final steps</a>.</li>
+<li><a href="https://www.funtoo.org/Install/Profiles" title="Install/Profiles">Profile Configuration</a>.</li>
+<li><a href="https://www.funtoo.org/Install/Done" title="Install/Done">All Done! Enjoy!</a></li></ol>
+<h2><span class="mw-headline" id="Download_LiveCD">Download LiveCD</span></h2>
+<p>In order to install Funtoo Linux, you will first need to boot your computer using a Linux-based image. This image is called a "LiveCD" for historical reasons, because historically people booted into Linux on new systems by burning an ISO image to a CD or DVD using a CD/DVD writer. This is still possible to do, if you prefer to use this method. However, most people
+these days will tend to use USB flash media (aka a "USB stick") for convenience, which can be written to using the standard <code>dd</code> command.
+</p><p>When installing Funtoo Linux on x86-64bit, we highly recommend the official Funtoo Linux LiveCD/LiveUSB, which can always be downloaded here:
+</p>
+<ul><li><a class="external free" href="https://www.funtoo.org/Funtoo:New_Install_Experience/LiveCD/Releases">https://www.funtoo.org/Funtoo:New_Install_Experience/LiveCD/Releases</a></li></ul>
+<p>While any modern bootable Linux image should be sufficient to install Funtoo Linux, the Funtoo LiveCD has several advantages over other options. Because it natively runs Funtoo Linux, and includes our official debian-sources kernel with very good hardware support, the hardware it supports is going to match the hardware that Funtoo Linux supports -- thus allowing you to identify any hardware compatibility issues
+immediately.
+</p><p>In addition, our LiveCD is regularly updated, and includes NetworkManager which allows the use of the easy <code>nmtui</code> command to configure your network. It also includes our innovative <a href="https://www.funtoo.org/index.php?title=Fchroot&amp;action=edit&amp;redlink=1" class="new" title="Fchroot (page does not exist)">Fchroot</a> tool, which allows you to use QEMU to "chroot" into non-x86 systems such as arm-64bit and riscv-64bit. This allows the Funtoo LiveCD to be used to even rescue and set up systems with different instruction sets!
+</p><p>Once downloaded, to copy it to a USB flash drive for booting, use the following command:
+</p>
+<pre class="code"><span class="code_root">root</span> <span class="code_blue">#</span> <span class="code_input">dd if=funtoo-livecd-20220521-2138.iso of=/dev/sdX bs=4k status=progress oflag=sync</span></pre>
+<p>Of course, you will need to change <code>/dev/sdX</code> to point to the block device of the USB stick on your system.
+</p>
+<h4><span class="mw-headline" id="Network_Access">Network Access</span></h4>
+<p>For steps on setting up network access from the LiveCD, please see the <a href="https://www.funtoo.org/Funtoo:New_Install_Experience/LiveCD" title="Funtoo:New Install Experience/LiveCD">Funtoo:New Install Experience/LiveCD</a> page.
+</p>
+<h4><span class="mw-headline" id="Remote_Install">Remote Install</span></h4>
+<p>Alternatively, you can log into your bootable environment over the network via SSH to perform the install from another computer, and this may be more convenient way to install Funtoo Linux.
+</p><p>First ensure that <code>sshd</code> is running. You may need to start <code>sshd</code> as follows:
+</p>
+<pre class="code"><span class="code_root">root</span> <span class="code_blue">#</span> <span class="code_input">/etc/init.d/sshd start</span></pre>
+<p>If you'd like to complete the install remotely, here's how. First, you will need to ensure that your bootable CD/USB image has a functioning network connection. Then, you will need to set a root password:
+</p>
+<pre class="code"><span class="code_root">root</span> <span class="code_blue">#</span><span class="code_input"> passwd</span>
+New password: <span class="code_input">********</span>
+Retype new password: <span class="code_input">********</span>
+passwd: password updated successfully</pre>
+<p><br>
+Once you have typed in a password, you will now need to determine the IP address of the bootable system, and then you can use <code>ssh</code> to connect to it. To determine the IP address currently being used by the LiveCD, type <code>ifconfig</code>:
+</p>
+<pre class="code"><span class="code_root">root</span> <span class="code_blue">#</span><span class="code_input"> ifconfig</span></pre>
+<p>Alternatively, determining of an IP address is possible with iproute2 <code>ip</code> tool:
+</p>
+<pre class="code"><span class="code_root">root</span> <span class="code_blue">#</span><span class="code_input"> ip addr show</span></pre>
+<p>One of the interfaces should have an IP address (listed as <code>inet addr:</code>) from your LAN. You can then connect remotely, from another system on your LAN, your bootable environment, and perform steps from the comfort of an existing OS. On your remote system, type the following, replacing <code>1.2.3.4</code> with the IP address of the LiveCD. Connecting from an existing Linux or MacOS system would look something like this:
+</p>
+<pre class="code"><span class="code_host">remote system</span> <span class="code_blue">$</span> <span class="code_input">ssh root@1.2.3.4</span>
+Password: <span class="code_input">**********</span></pre>
+<div class="note">
+<div class="note-head"><i class="fas fa-comment-alt"></i>&nbsp;&nbsp;&nbsp;Note</div><div class="note-body">
+<p>If you'd like to connect remotely from an existing Microsoft Windows system, you'll need to download an SSH client for Windows, such as <a class="external text" href="https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse">OpenSSH</a>.
+</p>
+</div></div>
+<p>After you've logged in via SSH, you're now connected remotely to the LiveCD and can perform the installation steps.
+</p>
+<h2><span class="mw-headline" id="Prepare_Disk">Prepare Disk</span></h2>
+<p>In this section, you will need to choose a disk format to use for booting and partitioning -- either MBR or UEFI/GPT. If you are not familiar with the differences between these options, please review our <a href="https://www.funtoo.org/Install/Disk_Formats" title="Install/Disk Formats">Disk Formats</a> page for an overview of each option and the trade-offs. Generally, it's usually safe to pick the legacy MBR method for system disks under 2TB in size and most modern PC systems support MBR as well as UEFI booting.
+</p>
+<h4><span class="mw-headline" id="But_First...">But First...</span></h4>
+<p>Before doing anything to your disks, make sure you are partitioning the right one. Use the <code>lsblk</code> command to view a list of all block devices on your system, as well as partitions on these block devices:
+</p>
+<pre class="code"><span class="code_root">root</span> <span class="code_blue">#</span> <span class="code_input">lsblk</span>
+NAME          MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda             8:0    0  1.8T  0 disk 
+├─sda1          8:1    0  512M  0 part 
+├─sda2          8:2    0    8G  0 part [SWAP]
+└─sda3          8:3    0  1.8T  0 part 
+  ├─main-root 254:0    0  500G  0 lvm  /
+  └─main-data 254:1    0  1.3T  0 lvm  /home</pre>
+<div class="note">
+<div class="note-head"><i class="fas fa-comment-alt"></i>&nbsp;&nbsp;&nbsp;Note</div><div class="note-body">
+<p>If you're not sure which disks are which, you can use <code>lsblk -o MODEL,NAME,SIZE</code> to show the device models matching the <code>/dev/sd?</code> names.
+</p>
+</div></div>
+<p>Make sure you will not be overwriting any important data and that you have chosen the correct <code>/dev/sd?</code> device. Above, you can see that SATA disk <code>sda</code> contains three partitions, <code>sda1</code>, <code>sda2</code> and <code>sda3</code>, and that <code>sda3</code> contains LVM volumes. If you are using an NVME disk, then you may see <code>nvme0n1</code> as your disk, and your partitions (if any exist yet) will be named <code>nvme0n1p1</code>, <code>nvme0n1p2</code>, etc. If you are installing on microSD Card for Raspberry Pi, your disk will likely be <code>mmcblk0</code> and partitions will have suffixes <code>p1</code>, <code>p2</code>, etc. 
+</p><p>Once you've double-checked your target block device and made sure you'll be partitioning the correct disk, proceed to the next step.
+</p>
+<h2><span class="mw-headline" id="MBR_Partitioning">MBR Partitioning</span></h2>
+<h4><span id="Legacy_(BIOS/MBR)_Method"></span><span class="mw-headline" id="Legacy_.28BIOS.2FMBR.29_Method">Legacy (BIOS/MBR) Method</span></h4>
+<div class="note">
+<div class="note-head"><i class="fas fa-comment-alt"></i>&nbsp;&nbsp;&nbsp;Note</div><div class="note-body">
+<p>Use this method if you are booting using your BIOS, and if your Funtoo LiveCD initial boot menu was light blue. If you're going to use the UEFI/GPT disk format, then please proceed to the next section.
+</p>
+</div></div>
+<p>First, it's a good idea to make sure that you've found the correct hard disk to partition. Try this command and verify that <code>/dev/sda</code> is the disk that you want to partition:
+</p>
+<pre class="code"><span class="code_root">root</span> <span class="code_blue">#</span><span class="code_input"> fdisk -l /dev/sda</span>
+
+Disk /dev/sda: 640.1 GB, 640135028736 bytes, 1250263728 sectors
+Units = sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disk label type: gpt
+
+#         Start          End    Size  Type            Name
+ 1         2048   1250263694  596.2G  Linux filesyste Linux filesystem</pre>
+<p>Now, it is recommended that you erase any existing MBR or GPT partition tables on the disk, which could confuse the system's BIOS at boot time. We accomplish this using <code>sgdisk</code>:
+</p>
+<div class="note warningnote">
+<div class="note-head warningnote"><i class="fas fa-exclamation-triangle"></i>&nbsp;&nbsp;&nbsp;Warning</div><div class="note-body warningnote">
+<p>This will make any existing partitions inaccessible! You are <b>strongly</b> cautioned and advised to backup any critical data before proceeding.
+</p>
+</div></div>
+<pre class="code"><span class="code_root">root</span> <span class="code_blue">#</span><span class="code_input"> sgdisk --zap-all /dev/sda</span>
+
+Creating new GPT entries.
+GPT data structures destroyed! You may now partition the disk using fdisk or
+other utilities.</pre>
+<p>This output is also nothing to worry about, as the command still succeeded:
+</p>
+<pre class="code">***************************************************************
+Found invalid GPT and valid MBR; converting MBR to GPT format
+in memory. 
+***************************************************************</pre>
+<p>Now we will use <code>fdisk</code> to create the MBR partition table and partitions:
+</p>
+<pre class="code"><span class="code_root">root</span> <span class="code_blue">#</span><span class="code_input"> fdisk /dev/sda</span></pre>
+<p>Within <code>fdisk</code>, follow these steps:
+</p><p><b>Empty the partition table</b>:
+</p>
+<pre class="code">Command (m for help): <span class="code_input">o ↵</span></pre>
+<p><b>Create Partition 1</b> (boot):
+</p>
+<pre class="code">Command (m for help): <span class="code_input">n ↵</span>
+Partition type (default p): <span class="code_input">↵</span>
+Partition number (1-4, default 1): <span class="code_input">↵</span>
+First sector: <span class="code_input">↵</span>
+Last sector: <span class="code_input">+128M ↵</span></pre>
+<p><b>Create Partition 2</b> (swap):
+</p>
+<pre class="code">Command (m for help): <span class="code_input">n ↵</span>
+Partition type (default p): <span class="code_input">↵</span>
+Partition number (2-4, default 2): <span class="code_input">↵</span>
+First sector: <span class="code_input">↵</span>
+Last sector: <span class="code_input">+2G ↵</span>
+Command (m for help): <span class="code_input">t ↵ </span>
+Partition number (1,2, default 2): <span class="code_input"> ↵</span>
+Hex code (type L to list all codes): <span class="code_input">82 ↵</span></pre>
+<p><b>Create the root partition:</b>
+</p>
+<pre class="code">Command (m for help): <span class="code_input">n ↵</span>
+Partition type (default p): <span class="code_input">↵</span>
+Partition number (3,4, default 3): <span class="code_input">↵</span>
+First sector: <span class="code_input">↵</span>
+Last sector: <span class="code_input">↵</span></pre>
+<p><b>Verify the partition table:</b>
+</p>
+<pre class="code">Command (m for help): <span class="code_input">p</span>
+
+Disk /dev/sda: 298.1 GiB, 320072933376 bytes, 625142448 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0x82abc9a6
+
+Device    Boot     Start       End    Blocks  Id System
+/dev/sda1           2048    264191    131072  83 Linux
+/dev/sda2         264192   4458495   2097152  82 Linux swap / Solaris
+/dev/sda3        4458496 625142447 310341976  83 Linux</pre>
+<p><b>Write the partition table to disk:</b>
+</p>
+<pre class="code">Command (m for help): <span class="code_input">w</span></pre>
+<p>Your new MBR partition table will now be written to your system disk.
+</p>
+<div class="note">
+<div class="note-head"><i class="fas fa-comment-alt"></i>&nbsp;&nbsp;&nbsp;Note</div><div class="note-body">
+<p>You're done with partitioning! Now, jump over to <a href="https://www.funtoo.org/InstallPrintable#Creating_filesystems" title="InstallPrintable">Creating filesystems</a>.
+</p>
+</div></div>
+<h2><span class="mw-headline" id="GPT_Partitioning">GPT Partitioning</span></h2>
+<h4><span id="UEFI/GPT_Method"></span><span class="mw-headline" id="UEFI.2FGPT_Method">UEFI/GPT Method</span></h4>
+<div class="note">
+<div class="note-head"><i class="fas fa-comment-alt"></i>&nbsp;&nbsp;&nbsp;Note</div><div class="note-body">
+<p>Use this method if you are interested in booting using UEFI, and if your Funtoo LiveCD initial boot menu was black and white, or the system booted without a boot menu. If it was light blue, this method will not work. Instead, use the instructions in the previous section then skip this section, or reboot LiveCD in UEFI mode first.
+</p>
+</div></div>
+<div class="note">
+<div class="note-head"><i class="fas fa-comment-alt"></i>&nbsp;&nbsp;&nbsp;Note</div><div class="note-body">
+<p>You can build legacy mode into your GPT partition table but it requires a BIOS Boot partition.  see <a href="https://www.funtoo.org/Talk:Install/GPT_Partitioning" title="Talk:Install/GPT Partitioning">Talk:Install/GPT_Partitioning</a>
+</p>
+</div></div>
+<p>The <code>gdisk</code> commands to create a GPT partition table are as follows. Adapt sizes as necessary, although these defaults will work for most users. Start <code>gdisk</code>:
+</p>
+<pre class="code"><span class="code_root">root</span> <span class="code_blue">#</span><span class="code_input"> gdisk /dev/sda</span></pre>
+<p>Within <code>gdisk</code>, follow these steps:
+</p><p><b>Create a new empty partition table</b> (This <i>will</i> erase all data on the disk when saved):
+</p>
+<pre class="code">Command: <span class="code_input">o ↵</span>
+This option deletes all partitions and creates a new protective MBR.
+Proceed? (Y/N): <span class="code_input">y ↵</span></pre>
+<p><b>Create Partition 1</b> (boot):
+</p>
+<pre class="code">Command: <span class="code_input">n ↵</span>
+Partition Number: <span class="code_input">1 ↵</span>
+First sector: <span class="code_input">↵</span>
+Last sector: <span class="code_input">+128M ↵</span>
+Hex Code: <span class="code_input">EF00 ↵</span></pre>
+<p><b>Create Partition 2</b> (swap):
+</p>
+<pre class="code">Command: <span class="code_input">n ↵</span>
+Partition Number: <span class="code_input">2 ↵</span>
+First sector: <span class="code_input">↵</span>
+Last sector: <span class="code_input">+4G ↵</span>
+Hex Code: <span class="code_input">8200 ↵</span></pre>
+<p><b>Create Partition 3</b> (root):
+</p>
+<pre class="code">Command: <span class="code_input">n ↵</span>
+Partition Number: <span class="code_input">3 ↵</span>
+First sector: <span class="code_input">↵</span>
+Last sector: <span class="code_input">↵</span> (for rest of disk)
+Hex Code: <span class="code_input">↵</span></pre>
+<p>Along the way, you can type "<code>p</code>" and hit Enter to view your current partition table. If you make a mistake, you can type "<code>d</code>" to delete an existing partition that you created. When you are satisfied with your partition setup, type "<code>w</code>" to write your configuration to disk:
+</p><p><b>Write Partition Table To Disk</b>:
+</p>
+<pre class="code">Command: <span class="code_input">w ↵</span>
+Do you want to proceed? (Y/N): <span class="code_input">Y ↵</span></pre>
+<p>The partition table will now be written to the disk and <code>gdisk</code> will close.
+</p><p>Now, your GPT/GUID partitions have been created, and will show up as the following <i>block devices</i> under Linux:
+</p>
+<ul><li><code>/dev/sda1</code>, which will be used to hold the <code>/boot</code> filesystem,</li>
+<li><code>/dev/sda2</code>, which will be used for swap space, and</li>
+<li><code>/dev/sda3</code>, which will hold your root filesystem.</li></ul>
+<div class="note tip">
+<div class="note-head tip"><i class="far fa-hand-point-right"></i>&nbsp;&nbsp;&nbsp;Tip</div><div class="note-body tip">
+<p>You can verify that the block devices above were correctly created by running the command <code>lsblk</code>.
+</p>
+</div></div>
+<h2><span class="mw-headline" id="Creating_Filesystems">Creating Filesystems</span></h2>
+<div class="note">
+<div class="note-head"><i class="fas fa-comment-alt"></i>&nbsp;&nbsp;&nbsp;Note</div><div class="note-body">
+<p>This section covers both BIOS <i>and</i> UEFI installs. Don't skip it!
+</p>
+</div></div>
+<p>Before your newly-created partitions can be used, the block devices that were created in the previous step need to be initialized with filesystem <i>metadata</i>. This process is known as <i>creating a filesystem</i> on the block devices. After filesystems are created on the block devices, they can be mounted and used to store files.
+</p><p>Let's keep this simple. Are you using legacy MBR partitions? If so, let's create an ext2 filesystem on <code>/dev/sda1</code>:
+</p>
+<pre class="code"><span class="code_root">root</span> <span class="code_blue">#</span><span class="code_input"> mkfs.ext2 /dev/sda1</span></pre>
+<p>If you're using GPT partitions for UEFI, or installing for Raspberry Pi, you'll want to create a vfat filesystem on your first partition. This will be <code>mmcblk0p1</code> in the case of Raspberry Pi:
+</p>
+<pre class="code"><span class="code_root">root</span> <span class="code_blue">#</span><span class="code_input"> mkfs.vfat -F 32 /dev/sda1</span></pre>
+<p>Now, let's create a swap partition. This partition will be used as disk-based virtual memory for your Funtoo Linux system.
+</p><p>You will not create a filesystem on your swap partition, since it is not used to store files. But it is necessary to initialize it using the <code>mkswap</code> command. Then we'll run the <code>swapon</code> command to make your newly-initialized swap space immediately active within the live CD environment, in case it is needed during the rest of the install process:
+</p>
+<pre class="code"><span class="code_root">root</span> <span class="code_blue">#</span> <span class="code_input">mkswap /dev/sda2</span>
+<span class="code_root">root</span> <span class="code_blue">#</span> <span class="code_input">swapon /dev/sda2</span></pre>
+<h4><span class="mw-headline" id="Root_Filesystem">Root Filesystem</span></h4>
+<p>Now, we need to create a root filesystem. This is where Funtoo Linux will live. We generally recommend ext4 or XFS root filesystems. 
+Keep in mind that some filesystems will require additional filesystem tools to be <code>emerge</code>d prior to rebooting. Please consult the following table for more information:
+</p>
+<div class="table-responsive"><table class="table">
+<tbody><tr><th>Filesystem</th><th>Recommended as root file system?</th><th>Additional tools required to emerge</th></tr>
+<tr><td>ext4</td><td>Yes</td><td>None</td></tr>
+<tr><td>XFS</td><td>Yes</td><td><code>sys-fs/xfsprogs</code></td></tr>
+<tr><td>zfs</td><td><span style="font-weight: bold; color: #f88">No</span> - advanced users only</td><td><code>sys-fs/zfs</code></td></tr>
+<tr><td>btrfs</td><td><span style="font-weight: bold; color: #f88">No</span> - advanced users only</td><td><code>sys-fs/btrfs-progs</code></td></tr>
+</tbody></table></div>
+<div class="note important">
+<div class="note-head important"><i class="fas fa-exclamation"></i>&nbsp;&nbsp;&nbsp;Important</div><div class="note-body important">
+<p><b>We do not recommend users set up ZFS or BTRFS as their root filesystem.</b> This is much more complex and usually not
+necessary. Instead, choose XFS or ext4. <i>We do support ZFS or BTRFS as non-root filesystems</i> and this is much, much easier to configure. See <a href="https://www.funtoo.org/ZFS" title="ZFS">ZFS</a> and <a href="https://www.funtoo.org/Btrfs" title="Btrfs">Btrfs</a> after you are done setting up your Funtoo Linux system to configure ZFS or BTRFS for
+additional secondary storage.
+</p>
+</div></div>
+<p>If you're not sure, choose ext4. Here's how to create a root ext4 filesystem:
+</p>
+<pre class="code"><span class="code_root">root</span> <span class="code_blue">#</span><span class="code_input"> mkfs.ext4 /dev/sda3</span></pre>
+<p>...and here's how to create an XFS root filesystem, if you prefer to use XFS instead of ext4:
+</p>
+<pre class="code"><span class="code_root">root</span> <span class="code_blue">#</span><span class="code_input"> mkfs.xfs /dev/sda3</span></pre>
+<p>Your filesystems (and swap) have all now been initialized, so that that can be mounted (attached to your existing directory heirarchy) and used to store files. We are ready to begin installing Funtoo Linux on these brand-new filesystems.
+</p>
+<h4><span class="mw-headline" id="Additional_Filesystems">Additional Filesystems</span></h4>
+<div class="note">
+<div class="note-head"><i class="fas fa-comment-alt"></i>&nbsp;&nbsp;&nbsp;Note</div><div class="note-body">
+<p>This can be very useful for Raspberry Pi systems!
+</p>
+</div></div>
+<p>You may want to create additional filesystems for various parts of your Funtoo filesystem tree. It is not uncommon to place <code>/home</code> or <code>/var</code> on separate filesystems.
+</p><p>For Raspberry Pi, you may not have a lot of spare room on the card depending on the capacity of your microSD card, and it may make a lot of sense to put the entire <code>/var</code> filesystem on an external hard drive or solid state disk. This will not only ensure you don't run out of disk space, but can also improve performance since writes to the microSD card typically aren't that fast. 
+</p><p>To do this, you will want to use <code>fdisk</code> or <code>gdisk</code> to create a partition on your external drive, and then use the <code>mkfs.xfs</code> or <code>mkfs.ext4</code> commands to create a filesystem on the new partition. We will mount this new filesystem in the next step prior to extracting the stage3 tarball. 
+</p>
+<h2><span class="mw-headline" id="Mounting_Filesystems">Mounting Filesystems</span></h2>
+<p>Mount the newly-created filesystems as follows, creating <code>/mnt/funtoo</code> as the installation mount point:
+</p>
+<pre class="code"><span class="code_root">root</span> <span class="code_blue">#</span><span class="code_input"> mkdir /mnt/funtoo</span>
+<span class="code_root">root</span> <span class="code_blue">#</span><span class="code_input"> mount /dev/sda3 /mnt/funtoo</span>
+<span class="code_root">root</span> <span class="code_blue">#</span><span class="code_input"> mkdir /mnt/funtoo/boot</span>
+<span class="code_root">root</span> <span class="code_blue">#</span><span class="code_input"> mount /dev/sda1 /mnt/funtoo/boot</span></pre>
+<p>If you have any additional filesystems you created earlier (such as <code>/home</code> or <code>/var</code>), you should mount them now, so that when the stage3 is extracted (which we will do in a later step) these filesystems will get populated with the necessary files. This can be done as follows:
+</p>
+<pre class="code"><span class="code_root">root</span> <span class="code_blue">#</span><span class="code_input"> mkdir /mnt/funtoo/var</span>
+<span class="code_root">root</span> <span class="code_blue">#</span><span class="code_input"> mount /dev/sdb1 /mnt/funtoo/var</span></pre>
+<h2><span class="mw-headline" id="Setting_the_Date">Setting the Date</span></h2>
+<div class="note important">
+<div class="note-head important"><i class="fas fa-exclamation"></i>&nbsp;&nbsp;&nbsp;Important</div><div class="note-body important">
+<p>If your system's date and time are too far off (typically by months or years), then it may prevent Portage from properly downloading source tarballs. This is because some of our sources are downloaded via HTTPS, which use SSL certificates and are marked with an activation and expiration date. However, if your system time is relatively close to correct, you can probably skip this step for now.
+</p>
+</div></div>
+<p>Now is a good time to verify the date and time are correctly set to UTC. Use the <code>date</code> command to verify the date and time:
+</p>
+<pre class="code"><span class="code_root">root</span> <span class="code_blue">#</span><span class="code_input"> date</span>
+Fri Jul 15 19:47:18 UTC 2011</pre>
+<p>If the date and/or time need to be corrected, do so using <code>date MMDDhhmmYYYY</code>, keeping in mind <code>hhmm</code> are in 24-hour format. The example below changes the date and time to "July 16th, 2011 @ 8:00PM" UTC:
+</p>
+<pre class="code"><span class="code_root">root</span> <span class="code_blue">#</span><span class="code_input"> date 071620002011</span>
+Fri Jul 16 20:00:00 UTC 2011</pre>
+<p>Once you have set the system clock, it's a very good idea to copy the time to the hardware clock, so it persists across reboots:
+</p>
+<pre class="code"><span class="code_root">root</span> <span class="code_blue">#</span><span class="code_input"> hwclock --systohc</span></pre>
+<h2><span class="mw-headline" id="Download_and_Extract_Stage3">Download and Extract Stage3</span></h2>
+<p>Now that filesystems are created and your hardware and system clock are set, the next step is downloading the initial Stage 3 tarball. The Stage 3 is a pre-compiled system used as a starting point to install Funtoo Linux.  
+</p><p>To download the correct build of Funtoo Linux for your system, first familiarize yourself with the <a href="https://www.funtoo.org/Support_Matrix" title="Support Matrix">Support Matrix</a>, in particular the <a href="https://www.funtoo.org/Support_Matrix#Desktop_Environments" title="Support Matrix">Desktop Environments</a> section, to help you make a decision about which desktop environment to set up (we recommend GNOME for new users.) Then, head over to the <a href="https://www.funtoo.org/Subarches" title="Subarches">Subarches</a> page. Subarches are builds of Funtoo Linux that are designed to run on a particular type of CPU, to offer the best possible performance. They also take advantage of the instruction sets available for each CPU.
+</p>
+<h4><span id="What_Subarch?"></span><span class="mw-headline" id="What_Subarch.3F">What Subarch?</span></h4>
+<p>From the subarch list at <a href="https://www.funtoo.org/Subarches" title="Subarches">Subarches</a>, choose your desired level of optimization. A system built specifically for your CPU will run faster than a less-optimized system. For a modern Intel or AMD system, it is safe to pick the exact optimization level for your particular family of CPU. This will offer the best possible performance.
+</p><p>If you are using a virtualization technology to run Funtoo Linux and your VM may be used on different types of hardware, then it's recommended that you use a stage3 that is optimized for the oldest CPU instruction set that your VM will run on, or a more generic image if it may run on both AMD and Intel processors.
+</p><p>Once you have found the appropriate subarch at <a href="https://www.funtoo.org/Subarches" title="Subarches">Subarches</a>, you will likely have a few installation images to choose from. This next section will help you understand which one to pick.
+</p>
+<h4><span id="Which_Image?"></span><span class="mw-headline" id="Which_Image.3F">Which Image?</span></h4>
+<div style="width: 100%; text-align: center; margin-top: 1.5em; margin-bottom: 1em;"><div style="border-radius: 20px; padding: 8px 15px 8px 15px; background-color: rgb(217 217 217); -webkit-box-shadow: 3px 3px 5px 0px rgba(217,217,217,1); -moz-box-shadow: 3px 3px 5px 0px rgba(217,217,217,1); box-shadow: 3px 3px 5px 0px rgba(217,217,217,1);">Our desktop environment stages (GNOME, Cinnamon, etc.) now support seamless installation on <b>VMware Workstation Pro</b> virtual machines. We highly recommend you enable <b>3D Accelerated Video</b> for your VM, which is not enabled by default. <a href="https://www.funtoo.org/Funtoo_VMware_Guest_Support" title="Funtoo VMware Guest Support">Click here for more info</a>.</div></div>
+<p>You can always manually choose an installation image via <a class="external text" href="https://build.funtoo.org/">https://build.funtoo.org</a> as well as using the <a href="https://www.funtoo.org/Subarches" title="Subarches">Subarches</a> page. Here is some guidance on choosing the best <code>.tar.xz</code> image for download. When choosing an image:
+</p>
+<dl><dt><i>Pick <code>next</code>.</i></dt>
+<dd>This is next release of Funtoo Linux, our current release.</dd></dl>
+<dl><dt><i>Pick the subarch for the CPU family of the system you are installing on.</i></dt>
+<dd>This will provide the best performance.</dd></dl>
+<dl><dt>Choose <i><code>stage3</code></i> for...</dt>
+<dd>The <i><code>stage3</code></i> is a more traditional, minimal and non-graphical installation of Funtoo. You will then build your system up to your desired state using <code>emerge</code>.</dd></dl>
+<dl><dt>Choose <i><code>gnome</code></i> for...</dt>
+<dd>The <i><code>gnome</code></i> installation image, if available, includes the full GNOME environment as well as Firefox already optimized for your hardware. You can then continue to further customize your system after installation. See the <a href="https://www.funtoo.org/Support_Matrix#Desktop_Environments" title="Support Matrix">Desktop Environments</a> section of our <a href="https://www.funtoo.org/Support_Matrix" title="Support Matrix">Support Matrix</a> for more desktop options.</dd></dl>
+<dl><dt>The <i><code>lxd</code></i> image for...</dt>
+<dd>The <i><code>lxd</code></i> image is for use with <a href="https://www.funtoo.org/LXD" title="LXD">LXD</a>, and is not used for installing directly on a desktop or laptop, so you should not select this option for regular installs. To install, first download and then <code>lxc image import &lt;name&gt;.tar.xz --alias funtoo</code> and then you can <code>lxc  launch funtoo my_container</code>.</dd></dl>
+<h4><span class="mw-headline" id="Download_the_Stage3">Download the Stage3</span></h4>
+<p>Once you have found the stage3 that you would like to download, use <code>wget</code> to download the Stage 3 tarball you have chosen to use as the basis for your new Funtoo Linux system. It should be saved to the <code>/mnt/funtoo</code> directory as follows:
+</p>
+<div class="note">
+<div class="note-head"><i class="fas fa-comment-alt"></i>&nbsp;&nbsp;&nbsp;Note</div><div class="note-body">
+<p>If you are using the Funtoo LiveCD, you can use a text-based browser to download your preferred stage. Type <code>links <a class="external free" href="https://build.funtoo.org/">https://build.funtoo.org</a></code> rather than the <code>wget</code> command below. Hit enter to select the appropriate directories and stage3.
+</p>
+</div></div>
+<pre class="code"><span class="code_root">root</span> <span class="code_blue">#</span><span class="code_input"> cd /mnt/funtoo</span>
+<span class="code_root">root</span> <span class="code_blue">#</span><span class="code_input"> wget https://build.funtoo.org/next/x86-64bit/generic_64/stage3-latest.tar.xz</span></pre>
+<h4><span class="mw-headline" id="Verify_downloaded_tarball">Verify downloaded tarball</span></h4>
+<p>Funtoo Linux stage tarballs are signed using GPG by the build server they are built on. It's a good practice to verify <a class="external text" href="https://en.wikipedia.org/wiki/Digital_signature#Applications">authenticity and integrity</a> of downloaded files when possible. For instructions how to import and trust GPG keys check <a href="https://www.funtoo.org/GPG_Signatures" title="GPG Signatures">our wiki page about GPG signatures</a>.
+</p><p>Then, you can download the stage3's GPG signature and use the <code>gpg --verify</code> command in order to verify your tarball:
+</p>
+<pre class="code"><span class="code_root">root</span> <span class="code_blue">#</span><span class="code_input"> wget https://build.funtoo.org/next/x86-64bit/generic_64/stage3-latest.tar.xz.gpg</span>
+<span class="code_root">root</span> <span class="code_blue">#</span><span class="code_input"> gpg --verify stage3-latest.tar.xz.gpg stage3-latest.tar.xz</span></pre>
+<p>Once the stage is downloaded and verified, extract the contents with the following command, substituting in the actual name of your Stage 3 tarball:
+</p>
+<pre class="code"><span class="code_root">root</span> <span class="code_blue">#</span><span class="code_input"> tar --numeric-owner --xattrs --xattrs-include='*' -xpf stage3-latest.tar.xz</span></pre>
+<div class="note important">
+<div class="note-head important"><i class="fas fa-exclamation"></i>&nbsp;&nbsp;&nbsp;Important</div><div class="note-body important">
+<p>It is very important to use all the options included above. See below for details.
+</p>
+</div></div>
+<p>Here are what the options to <code>tar</code> do:
+</p>
+<dl><dt><code>--numeric-owner</code></dt>
+<dd>Without this option, <code>tar</code> will map ownership and group ownership based on the UID to user and GID to group mappings as defined on the LiveCD. We don't want this -- we want the <i>numeric values</i> of the UIDs and GIDs in the tarball to be preserved on disk, so when your Funtoo Linux system boots, the UIDs and GIDs are set correctly for Funtoo. That is what this option tells <code>tar</code> to do.</dd>
+<dt><code>--xattrs --xattrs-include='*'</code></dt>
+<dd>Funtoo Linux uses filesystem extended attributes to set Linux capabilities, which allow for certain programs such as <code>ping</code> to have enhanced privileges without having to be fully 'suid root'. Even with the <code>-p</code> option, <code>tar</code> will not restore extended attributes we need unless these two options are specified.</dd>
+<dt><code>-xpf</code></dt>
+<dd>This instructs <code>tar</code> to extract (<code>x</code>), preserve regular permissions and ownership (<code>p</code>), and use the filename (<code>f</code>) specified.</dd></dl>
+<h2><span class="mw-headline" id="Chroot_into_Funtoo">Chroot into Funtoo</span></h2>
+<p>To set up your Funtoo Linux system, we need to "enter into" it before we boot. If you are using the Funtoo Linux LiveCD, this can be easily done with the <code>fchroot</code> command:
+</p>
+<pre class="code"><span class="code_root">root</span> <span class="code_blue">#</span> <span class="code_input">fchroot /mnt/funtoo</span>
+<span class="code_host">fchroot</span> <span class="code_blue">#</span></pre>
+<p>The <code>fchroot</code> command will take care of all necessary steps to enter into your new Funtoo Linux system, as well as clean up things when you exit the fchroot by typing
+<code>exit</code> or <code>ctrl-D</code>.
+</p><p>If you are using another LiveCD or USB media to install Funtoo, you can manually chroot by using the following set of commands:
+</p>
+<pre class="code"><span class="code_root">root</span> <span class="code_blue">#</span> <span class="code_input">cd /mnt/funtoo</span>
+<span class="code_root">root</span> <span class="code_blue">#</span> <span class="code_input">mount --rbind /proc proc</span>
+<span class="code_root">root</span> <span class="code_blue">#</span> <span class="code_input">mount --rbind /sys sys</span>
+<span class="code_root">root</span> <span class="code_blue">#</span> <span class="code_input">mount --rbind /dev dev</span>
+<span class="code_root">root</span> <span class="code_blue">#</span> <span class="code_input">cp /etc/resolv.conf /mnt/funtoo/etc/</span>
+<span class="code_root">root</span> <span class="code_blue">#</span> <span class="code_input">chroot . /bin/su --login</span>
+<span class="code_host">chroot</span> <span class="code_blue">#</span></pre>
+<div class="note">
+<div class="note-head"><i class="fas fa-comment-alt"></i>&nbsp;&nbsp;&nbsp;Note</div><div class="note-body">
+<p>For users of live CDs with 64-bit kernels installing 32-bit systems: Some software may use <code>uname -r</code> to check whether the system is 32 or 64-bit. You may want to append linux32 to the chroot command as a workaround, but it's generally not needed.
+</p>
+</div></div>
+<div class="note important">
+<div class="note-head important"><i class="fas fa-exclamation"></i>&nbsp;&nbsp;&nbsp;Important</div><div class="note-body important">
+<p>If you receive the error "<code>chroot: failed to run command `/bin/bash': Exec format error</code>", it is most likely because you are running a 32-bit kernel and trying to execute 64-bit code. Make sure that you have selected the proper type of kernel when booting your live CD.
+</p>
+</div></div>
+<p>Test internet name resolution from within the chroot:
+</p>
+<pre class="code"><span class="code_host">chroot</span> <span class="code_blue">#</span> <span class="code_input">ping -c 5 google.com</span></pre>
+<p>If you can't ping, make sure that <code>/etc/resolv.conf</code> specifies a valid IP address for a reachable nameserver in its <code>nameserver</code> setting.
+</p><p>Congratulations! You are now chrooted inside a Funtoo Linux system. Now it's time to get Funtoo Linux properly configured so that Funtoo Linux will start successfully, without any manual assistance, when your system is restarted.
+</p>
+<h2><span class="mw-headline" id="Download_Portage_Tree">Download Portage Tree</span></h2>
+<p>Now it's time to install the Portage repository, which contains package scripts (ebuilds) that tell portage how to build and install thousands of different software packages. To create the Portage repository, simply run <code>ego sync</code> from within the chroot. This will automatically clone the portage tree from <a class="external text" href="https://github.com/funtoo/meta-repo">GitHub</a> and all kits:
+</p>
+<pre class="code"><span class="code_host">chroot</span> <span class="code_blue">#</span> <span class="code_input">ego sync</span></pre>
+<h2><span class="mw-headline" id="Configuration_Files">Configuration Files</span></h2>
+<p>As is expected from a Linux distribution, Funtoo Linux has its share of configuration files. The one file you are absolutely required to edit in order to ensure that Funtoo Linux boots successfully is <code>/etc/fstab</code>. The others are optional. 
+</p>
+<h4><span class="mw-headline" id="Using_Nano">Using Nano</span></h4>
+<p>The default editor included in the chroot environment is called <code>nano</code>. To edit one of the files below, run nano as follows:
+</p>
+<pre class="code"><span class="code_host">chroot</span> <span class="code_blue">#</span> <span class="code_input">nano -w /etc/fstab</span></pre>
+<p>When in the editor, you can use arrow keys to move the cursor, and common keys like backspace and delete will work as expected. To save the file, press Control-X, and answer <code>y</code> when prompted to save the modified buffer if you would like to save your changes.
+</p>
+<h4><span class="mw-headline" id="Configuration_Files_2">Configuration Files</span></h4>
+<p>Here are a full list of files that you may want to edit, depending on your needs:
+</p>
+<div class="table-responsive"><table class="table">
+<tbody><tr><th class="active">File</th><th class="active">Do I need to change it?</th><th class="active">Description</th></tr>
+<tr class="danger">
+<td><code>/etc/fstab</code></td>
+<td><b>YES - required</b></td>
+<td>Mount points for all filesystems to be used at boot time. This file must reflect your disk partition setup. We'll guide you through modifying this file below.</td>
+</tr><tr>
+<td><code>/etc/localtime</code></td>
+<td><i>Maybe - recommended</i></td>
+<td>Your timezone, which will default to UTC if not set. This should be a symbolic link to something located under /usr/share/zoneinfo (e.g. /usr/share/zoneinfo/America/Montreal) </td>
+</tr><tr>
+<td><code>/etc/make.conf</code></td>
+<td><i>NO - not required or recommended</i></td>
+<td><i>Unlike Gentoo, it is normal and correct for this file to be empty in Funtoo Linux, as settings have been migrated to our enhanced profile system. Adding settings from this file will cause your system to be considered a non-standard setup and not officially supported. If you feel you need to add something to this file, be sure to ask on Discord for guidance. You probably don't.</i></td>
+</tr><tr>
+<td><code>/etc/hosts</code></td>
+<td><i>No</i></td>
+<td> You no longer need to manually set the hostname in this file. This file is automatically generated by <code>/etc/init.d/hostname</code>.</td>
+</tr><tr>
+<td><code>/etc/conf.d/hostname</code></td>
+<td><i>Maybe - recommended</i></td>
+<td>Used to set system hostname. Set the <code>hostname</code> variable to the fully-qualified (with dots, ie. <code>foo.funtoo.org</code>) name if you have one. Otherwise, set to the local system hostname (without dots, ie. <code>foo</code>). Defaults to <code>localhost</code> if not set.</td>
+</tr><tr>
+<td><code>/etc/conf.d/keymaps</code></td>
+<td>Optional</td>
+<td>Keyboard mapping configuration file (for console pseudo-terminals). Set if you have a non-US keyboard. See <a href="https://www.funtoo.org/Funtoo_Linux_Localization" title="Funtoo Linux Localization">Funtoo Linux Localization</a>.</td>
+</tr><tr>
+<td><code>/etc/conf.d/hwclock</code></td>
+<td>Optional</td>
+<td>How the time of the battery-backed hardware clock of the system is interpreted (UTC or local time). Linux uses the battery-backed hardware clock to initialize the system clock when the system is booted.</td>
+</tr><tr>
+<td><code>/etc/conf.d/modules</code></td>
+<td>Optional</td>
+<td>Kernel modules to load automatically at system startup. Typically not required. See <a href="https://www.funtoo.org/Additional_Kernel_Resources" title="Additional Kernel Resources">Additional Kernel Resources</a> for more info.</td>
+</tr><tr>
+<td><code>/etc/conf.d/consolefont</code></td>
+<td>Optional</td>
+<td>Allows you to specify the default console font. To apply this font, enable the consolefont service by running rc-update add consolefont.</td>
+</tr><tr>
+<td><code>/etc/conf.d/swap</code></td>
+<td>Optional</td>
+<td>When using a <b>swap file</b> that is not on the root filesystem, localmount service must be configured to be a dependency of swap service.</td>
+</tr><tr>
+<td><code>profiles</code></td>
+<td>Optional</td>
+<td>Some useful portage settings that may help speed up intial configuration.</td>
+</tr>
+</tbody></table></div>
+<p>If you're installing an English version of Funtoo Linux, you're in luck, as most of the configuration files can be used as-is. If you're installing for another locale, don't worry. We will walk you through the necessary configuration steps on the <a href="https://www.funtoo.org/Funtoo_Linux_Localization" title="Funtoo Linux Localization">Funtoo Linux Localization</a> page, and if needed, there's always plenty of friendly, helpful support available. (See <a href="https://www.funtoo.org/Getting_Help" title="Getting Help">Getting Help</a>)
+</p><p>Let's go ahead and see what we have to do. Use <code>nano -w &lt;name_of_file&gt;</code> to edit files -- the "<code>-w</code>" argument disables word-wrapping, which is handy when editing configuration files. You can copy and paste from the examples.
+</p>
+<div class="note warningnote">
+<div class="note-head warningnote"><i class="fas fa-exclamation-triangle"></i>&nbsp;&nbsp;&nbsp;Warning</div><div class="note-body warningnote">
+<p>It's important to edit your <code>/etc/fstab</code> file before you reboot! You will need to modify both the "fs" and "type" columns to match the settings for your partitions and filesystems that you created with <code>gdisk</code> or <code>fdisk</code>. Skipping this step may prevent Funtoo Linux from booting successfully.
+</p>
+</div></div>
+<h4><span id="/etc/fstab"></span><span class="mw-headline" id=".2Fetc.2Ffstab">/etc/fstab</span></h4>
+<p><code>/etc/fstab</code> is used by the <code>mount</code> command which is run when your system boots. Lines in this file inform <code>mount</code> about filesystems to be mounted and how they should be mounted. In order for the system to boot properly, you must edit <code>/etc/fstab</code> and ensure that it reflects the partition configuration you used earlier in the install process. If you can't remember the partition configuration that you used earlier:
+</p>
+<pre class="code"><span class="code_host">chroot</span> <span class="code_blue">#</span> <span class="code_input">lsblk -f</span></pre>
+<pre class="code"><span class="code_host">chroot</span> <span class="code_blue">#</span> <span class="code_input">nano -w /etc/fstab</span></pre>
+<div class="note codenote">
+<div class="note-head codenote"><i class="fas fa-code"></i>&nbsp;&nbsp;&nbsp;<code>/etc/fstab</code>  - An example fstab file</div><pre lang="{{{lang}}}">/dev/sda1       /boot         vfat    noauto,noatime  1 2
+/dev/sda2       none          swap    sw              0 0
+/dev/sda3       /             ext4    noatime         0 1
+</pre>
+</div>
+<div class="note">
+<div class="note-head"><i class="fas fa-comment-alt"></i>&nbsp;&nbsp;&nbsp;Note</div><div class="note-body">
+<p>If you mounted a /var or /home partition, add them to your fstab, or your system may not boot correctly.
+</p>
+</div></div>
+<h4><span id="/etc/localtime"></span><span class="mw-headline" id=".2Fetc.2Flocaltime">/etc/localtime</span></h4>
+<p><code>/etc/localtime</code> is used to specify the timezone that your machine is in, and defaults to UTC. If you would like your Funtoo Linux system to use local time, you should replace <code>/etc/localtime</code> with a symbolic link to the timezone that you wish to use. 
+</p>
+<pre class="code"><span class="code_host">chroot</span> <span class="code_blue">#</span> <span class="code_input">rm -f /etc/localtime</span>
+<span class="code_host">chroot</span> <span class="code_blue">#</span> <span class="code_input">ln -sf /usr/share/zoneinfo/MST7MDT /etc/localtime</span></pre>
+<p>The above sets the timezone to Mountain Standard Time (with daylight savings). Type <code>ls /usr/share/zoneinfo</code> to list available timezones. There are also sub-directories containing timezones described by location.
+</p>
+<h4><span id="/etc/conf.d/hwclock"></span><span class="mw-headline" id=".2Fetc.2Fconf.d.2Fhwclock">/etc/conf.d/hwclock</span></h4>
+<p>If you dual-boot with Windows, you'll need to edit this file and change the value of <b>clock</b> from <b>UTC</b> to <b>local</b>, because Windows will set your hardware clock to local time every time you boot Windows. Otherwise you normally wouldn't need to edit this file.
+</p>
+<pre class="code"><span class="code_host">chroot</span> <span class="code_blue">#</span> <span class="code_input">nano -w /etc/conf.d/hwclock</span></pre>
+<h4><span class="mw-headline" id="Localization">Localization</span></h4>
+<p>By default, Funtoo Linux is configured with Unicode (UTF-8) enabled, and for the US English locale and keyboard. If you would like to configure your system to use a non-English locale or keyboard, see <a href="https://www.funtoo.org/Funtoo_Linux_Localization" title="Funtoo Linux Localization">Funtoo Linux Localization</a>.
+</p>
+<h2><span class="mw-headline" id="Introducing_Portage">Introducing Portage</span></h2>
+<p>Portage, the Funtoo Linux package manager has a command called <code>emerge</code> which is used to build and install packages from source. It also takes care of installing all of the package's dependencies. You call emerge like this:
+</p>
+<pre class="code"><span class="code_host">chroot</span> <span class="code_blue">#</span> <span class="code_input">emerge packagename</span></pre>
+<p>When you install a package by specifying its name in the command-line, Portage records its name in the <code>/var/lib/portage/world</code> file. It does so because it assumes that, since you have installed it by name, you want to consider it part of your system and want to keep the package updated in the future. This is a handy feature, since when packages are being added to the <code>world</code> set, we can update our entire system by typing:
+</p>
+<pre class="code"><span class="code_host">chroot</span> <span class="code_blue">#</span> <span class="code_input">ego sync</span>
+<span class="code_host">chroot</span> <span class="code_blue">#</span> <span class="code_input">emerge -auDN @world</span></pre>
+<p>This is the "official" way to update your Funtoo Linux system. Above, we first update our Portage tree using git to grab the latest ebuilds (scripts), and then run an emerge command to update the <code>world</code> set of packages. The options specified tell <code>emerge</code> to:
+</p>
+<ul><li><b><code>a</code></b> - show us what will be emerged, and <b>ask</b> us if we want to proceed</li>
+<li><b><code>u</code></b> - <b>update</b> the packages we specify -- don't emerge them again if they are already emerged.</li>
+<li><b><code>D</code></b> - Consider the entire dependency tree of packages when looking for updates. In other words, do a <b>deep</b> update.</li>
+<li><b><code>N</code></b> - Update any packages that have changed (<b>new</b>) USE settings.</li></ul>
+<p>Of course, sometimes we want to install a package but not add it to the <code>world</code> file. This is often done because you only want the package installed temporarily or because you know the package in question is a dependency of another package. If this behavior is desired, you call emerge like this:
+</p>
+<pre class="code"><span class="code_host">chroot</span> <span class="code_blue">#</span> <span class="code_input">emerge -1 packagename</span>
+</pre>
+<p>Advanced users may be interested in the <a href="https://www.funtoo.org/Emerge" title="Emerge">Emerge</a> wiki page.
+</p>
+<h2><span class="mw-headline" id="Prepare_Disk_2">Prepare Disk</span></h2>
+<p>Funtoo Linux stage3's include a pre-built <code>debian-sources</code> kernel to make installation faster and easier. To see what kernel version is pre-installed, type:
+</p>
+<pre class="code"><span class="code_host">chroot</span> <span class="code_blue">#</span> <span class="code_input">emerge -s debian-sources</span>
+Searching...    
+[ Results for search key&nbsp;: <b>debian-sources</b> ]
+[ Applications found&nbsp;: <b>1</b> ]
+
+*  <b>sys-kernel/debian-sources</b>
+      <span class="code_green">Latest version available:</span> 5.9.6_p1
+      <span class="code_green">Latest version installed:</span> 5.9.6_p1
+      <span class="code_green">Size of files:</span> 118,723 kB
+      <span class="code_green">Homepage:</span>      https://packages.debian.org/unstable/kernel/
+      <span class="code_green">Description:</span>   Debian Sources (and optional binary kernel)
+      <span class="code_green">License:</span>       GPL-2</pre>
+<h3><span class="mw-headline" id="Firmware">Firmware</span></h3>
+<p>At this point it is wise to emerge the latest <code>sys-kernel/linux-firmware</code> package, because various drivers rely on firmware blobs and instructions. Hardware like Wi-Fi cards, graphic cards, network cards, and others will not work properly or at all if firmware is not available. If using the <i><code>stage3</code></i> image, perform the following to install it. <code>linux-firmware</code> will be already installed if using the <i><code>gnome</code></i> image:
+</p>
+<pre class="code"><span class="code_host">chroot</span> <span class="code_blue">#</span> <span class="code_input">emerge -av linux-firmware</span></pre>
+<h2><span class="mw-headline" id="Bootloader">Bootloader</span></h2>
+<h3><span class="mw-headline" id="boot.conf_Configuration">boot.conf Configuration</span></h3>
+<p>These install instructions show you how to use GRUB to boot using BIOS (legacy) or UEFI.
+</p><p>ego boot update (<code>ego boot</code>) is installed by default, but GRUB is not, as it is not required for all Funtoo Linux systems (such as containers, for example.) But for booting on bare metal, it is the recommended and best-supported boot loader, so you will need to emerge it:
+</p>
+<pre class="code"><span class="code_host">chroot</span> <span class="code_blue">#</span> <span class="code_input">emerge -av grub</span></pre>
+<h4><span class="mw-headline" id="boot.conf">boot.conf</span></h4>
+<p><code>/etc/boot.conf</code> controls boot loader configuration in Funtoo. Here is what is in the file by default:
+</p>
+<div class="note codenote">
+<div class="note-head codenote"><i class="fas fa-code"></i>&nbsp;&nbsp;&nbsp;<code>/etc/boot.conf</code>  </div><pre lang="{{{lang}}}">boot {
+	generate grub
+	default "Funtoo Linux"
+	timeout 3
+}
+
+"Funtoo Linux" {
+	kernel kernel[-v]
+	initrd initramfs[-v]
+	params += real_root=auto rootfstype=auto
+}
+
+"Funtoo Linux (nomodeset)" {
+	kernel kernel[-v]
+	initrd initramfs[-v]
+	params += real_root=auto rootfstype=auto nomodeset
+}
+</pre>
+</div>
+<p>If you are booting a custom or non-default kernel, please read <code>man boot.conf</code> for information on the various options available to you.
+</p>
+<h4><span class="mw-headline" id="nomodeset">nomodeset</span></h4>
+<p>You will notice after booting that you there will be a boot option in the GRUB menu for a "nomodeset" mode. We don't recommend you use this mode by default but it is available to you for a couple of good reasons:
+</p>
+<ul><li><b>For users with HiDPI (4K+) displays, especially laptops</b>: If you have not set up a graphical environment, when the kernel automatically changes graphics modes, the console font can be tiny and unreadable.</li>
+<li><b>For users with incompatible graphics cards</b>: Some graphics cards don't handle mode setting properly and this can result in a blank screen after reboot. Use this boot option as a temporary workaround.</li></ul>
+<p>To use the <code>nomodeset</code> option, simply select that option from the GRUB menu when your system boots.
+</p>
+<h3><span class="mw-headline" id="rootwait">rootwait</span></h3>
+<p>If you are using a root partition on an <code>nvme</code> device, add the <code>rootwait</code> kernel parameter to force the kernel to wait for it to asynchronously initialize or the kernel will panic on some hardware.
+</p>
+<h3><span class="mw-headline" id="Intel_Microcode">Intel Microcode</span></h3>
+<p><code>ego boot</code> will ensure that you have the most recent Intel CPU microcode installed on your system if you emerge the following packages. These will be merged for you already if
+you are using a desktop stage3:
+</p>
+<pre class="code"><span class="code_host">chroot</span> <span class="code_blue">#</span> <span class="code_input">emerge -av intel-microcode iucode_tool</span></pre>
+<p>This is not necessary for AMD systems.
+</p>
+<h4><span id="Old_School_(BIOS)_MBR"></span><span class="mw-headline" id="Old_School_.28BIOS.29_MBR">Old School (BIOS) MBR</span></h4>
+<p>When using "old school" BIOS booting, run the following command to install GRUB to your MBR, and generate the <code>/boot/grub/grub.cfg</code> configuration file that GRUB will use for booting:
+</p>
+<pre class="code"><span class="code_host">chroot</span> <span class="code_blue">#</span> <span class="code_input">grub-install --target=i386-pc --no-floppy /dev/sdX</span>
+<span class="code_host">chroot</span> <span class="code_blue">#</span> <span class="code_input">ego boot update</span></pre>
+<h4><span id="New_School_(UEFI)_Boot_Entry"></span><span class="mw-headline" id="New_School_.28UEFI.29_Boot_Entry">New School (UEFI) Boot Entry</span></h4>
+<p>If you're using "new school" UEFI booting, run of the following sets of commands, depending on whether you are installing a 64-bit or 32-bit system. This will add GRUB as a UEFI boot entry.
+</p><p>For x86-64bit systems:
+</p>
+<pre class="code"><span class="code_host">chroot</span> <span class="code_blue">#</span> <span class="code_input">mount -o remount,rw /sys/firmware/efi/efivars</span>
+<span class="code_host">chroot</span> <span class="code_blue">#</span> <span class="code_input">grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id="Funtoo Linux [GRUB]" --recheck /dev/sda</span>
+<span class="code_host">chroot</span> <span class="code_blue">#</span> <span class="code_input">ego boot update</span></pre>
+<p>For x86-32bit systems:
+</p>
+<pre class="code"><span class="code_host">chroot</span> <span class="code_blue">#</span> <span class="code_input">mount -o remount,rw /sys/firmware/efi/efivars</span>
+<span class="code_host">chroot</span> <span class="code_blue">#</span> <span class="code_input">grub-install --target=i386-efi --efi-directory=/boot --bootloader-id="Funtoo Linux [GRUB]" --recheck /dev/sda</span>
+<span class="code_host">chroot</span> <span class="code_blue">#</span> <span class="code_input">ego boot update</span></pre>
+<h4><span id="First_Boot,_and_in_the_future..."></span><span class="mw-headline" id="First_Boot.2C_and_in_the_future...">First Boot, and in the future...</span></h4>
+<p>OK -- you are almost ready to boot! 
+</p><p>You only need to run <code>grub-install</code> when you first install Funtoo Linux, but you need to re-run <code>ego boot update</code> every time you modify your <code>/etc/boot.conf</code>. When you emerge updated kernels, <code>ego boot update</code> will be run automatically as part of the install process. This will regenerate <code>/boot/grub/grub.cfg</code> so that you will have new kernels available in your GRUB boot menu upon your next reboot.
+</p>
+<h4><span class="mw-headline" id="Post_reboot_UEFI_troubleshooting">Post reboot UEFI troubleshooting</span></h4>
+<p>In case UEFI NVRAM boot entry is missing in BIOS and grub does not start you can try moving an already installed GRUB EFI executable to the <a class="external text" href="https://wiki.archlinux.org/index.php/GRUB#Default/fallback_boot_path">default/fallback path</a>
+</p>
+<pre class="code"><span class="code_host">chroot</span> <span class="code_blue">#</span> <span class="code_input">mv -v '/boot/EFI/Funtoo Linux [GRUB]' /boot/EFI/BOOT</span>
+<span class="code_host">chroot</span> <span class="code_blue">#</span> <span class="code_input">mv -v /boot/EFI/BOOT/grubx64.efi /boot/EFI/BOOT/BOOTX64.EFI</span></pre>
+<h2><span class="mw-headline" id="Network">Network</span></h2>
+<p>It's important to ensure that you will be able to connect to your local-area network after you reboot into Funtoo Linux. There are three approaches you can use for configuring your network: NetworkManager, dhcpcd, and the <a href="https://www.funtoo.org/Funtoo_Linux_Networking" class="mw-redirect" title="Funtoo Linux Networking">Funtoo Linux Networking</a> scripts. Here's how to choose which one to use based on the type of network you want to set up.
+</p>
+<h4><span class="mw-headline" id="Wi-Fi">Wi-Fi</span></h4>
+<div class="note">
+<div class="note-head"><i class="fas fa-comment-alt"></i>&nbsp;&nbsp;&nbsp;Note</div><div class="note-body">
+<p>If using the <i><code>gnome</code></i> or other desktop install image, <code>linux-firmware</code> and NetworkManager are already installed and available. You can use <code>nmtui</code> to get Wi-Fi going if you need network connectivity prior to getting X and GNOME fully up and running. In addition, desktop stage3's have ZeroConf/Bonjour multicast DNS lookups enabled by default. Both these things will <i>not</i> be set up yet if you are using the basic <i><code>stage3</code></i> image.
+</p>
+</div></div>
+<p>For laptop/mobile systems where you will be using Wi-Fi, roaming, and connecting to various networks, NetworkManager is strongly recommended.  
+Since Wi-Fi cards require firmware to operate, it is also recommended that you emerge the linux-firmware ebuild if you have not done so already:
+</p>
+<pre class="code"><span class="code_host">chroot</span> <span class="code_blue">#</span> <span class="code_input">emerge linux-firmware networkmanager</span>
+<span class="code_host">chroot</span> <span class="code_blue">#</span> <span class="code_input">rc-update add NetworkManager default</span></pre>
+<p>The above command will ensure that NetworkManager starts after you boot into Funtoo Linux. Once you've completed these installation steps and have booted into Funtoo Linux, you can use the <code>nmtui</code> command (which has an easy-to-use console-based interface) to configure NetworkManager so that it will connect (and automatically reconnect, after reboot) to a Wi-Fi access point:
+</p>
+<pre class="code"><span class="code_host">chroot</span> <span class="code_blue">#</span> <span class="code_input">nmtui</span></pre>
+<p>For more information about NetworkManager, see the <a href="https://www.funtoo.org/Package:NetworkManager" title="Package:NetworkManager">NetworkManager package page</a>.
+</p>
+<h4><span id="Desktop_(Wired_DHCP)"></span><span class="mw-headline" id="Desktop_.28Wired_DHCP.29">Desktop (Wired DHCP)</span></h4>
+<p>For a home desktop or workstation with wired Ethernet that will use DHCP, the simplest and most effective option to enable network connectivity is to simply add <code>dhcpcd</code> to the default runlevel:
+</p>
+<pre class="code"><span class="code_host">chroot</span> <span class="code_blue">#</span> <span class="code_input">rc-update add dhcpcd default</span></pre>
+<p>When you reboot, <code>dhcpcd</code> will run in the background and manage all network interfaces and use DHCP to acquire network addresses from a DHCP server.
+</p><p>If your upstream DHCP server is dnsmasq, it can be configured to assign addresses via mac address to make servers on DHCP feasible.
+</p>
+<h4><span id="Server_(Static_IP)"></span><span class="mw-headline" id="Server_.28Static_IP.29">Server (Static IP)</span></h4>
+<p>For servers, the <a href="https://www.funtoo.org/Funtoo_Linux_Networking" class="mw-redirect" title="Funtoo Linux Networking">Funtoo Linux Networking</a> scripts are the supported option for network configuration, and they <a href="https://www.funtoo.org/Funtoo_Linux_Networking" class="mw-redirect" title="Funtoo Linux Networking">have their own documentation</a>. They are optimized for static configurations and things like virtual Ethernet bridging for virtualization setups. See <a href="https://www.funtoo.org/Funtoo_Linux_Networking" class="mw-redirect" title="Funtoo Linux Networking">Funtoo Linux Networking</a> for information on how to use Funtoo Linux's template-based network configuration system.
+</p>
+<h4><span class="mw-headline" id="Hostname">Hostname</span></h4>
+<p>By default Funtoo uses "localhost" as hostname. Although the system will work perfectly fine using this name, some ebuilds refuse to install when detecting localhost as hostname. It also may create confusion if several systems use the same hostname. Therefore, it is advised to change it to a more meaningful name. The hostname itself is arbitrary, meaning you can choose almost any combination of characters, as long as it makes sense to the system administrator. To change the hostname, edit
+</p>
+<pre class="code"><span class="code_host">chroot</span> <span class="code_blue">#</span> <span class="code_input">nano /etc/conf.d/hostname</span></pre>
+<p>Look for the line starting with hostname and change the entry between the quotes. Save the file, on the next boot Funtoo will use the new hostname.
+</p>
+<div class="note warningnote">
+<div class="note-head warningnote"><i class="fas fa-exclamation-triangle"></i>&nbsp;&nbsp;&nbsp;Warning</div><div class="note-body warningnote">
+<p>Hostnames can be up to 63 characters long and may use the following characters: a-z, 0-9 and hyphens (-). However, the hyphen may not be the first or last character.
+</p>
+</div></div>
+<h2><span class="mw-headline" id="Finishing_Up">Finishing Up</span></h2>
+<h3><span class="mw-headline" id="Set_your_root_password">Set your root password</span></h3>
+<p>It's imperative that you set your root password before rebooting so that you can log in.
+</p>
+<pre class="code"><span class="code_host">chroot</span> <span class="code_blue">#</span> <span class="code_input">passwd</span>
+New password: <span class="code_input">**********</span>
+Retype new password: <span class="code_input">**********</span>
+passwd: password updated successfully</pre>
+<h3><span class="mw-headline" id="Create_a_Regular_User">Create a Regular User</span></h3>
+<p>It's also a good idea to create a regular user for daily use. If you're using GNOME, this is a requirement as you cannot log in to GDM (The GNOME Display Manager) as root. This can be accomplished as follows:
+</p>
+<pre class="code"><span class="code_host">chroot</span> <span class="code_blue">#</span> <span class="code_input">useradd -m drobbins</span></pre>
+<p>You will also likely want to add your primary user to one or more supplemental groups. Here is a list of important groups and their effect:
+</p>
+<div class="table-responsive"><table class="table">
+<tbody><tr><th class="active">Group</th><th class="active">Description</th></tr>
+<tr><td><code>wheel</code></td><td>Allows your user account to '<code>su</code>' to root. Recommended on your primary user account for easy maintenance. Also used with <code>sudo</code>.</td></tr>
+<tr><td><code>audio</code></td><td>Allows your user account to directly access audio devices. Required if using ALSA; otherwise optional.</td></tr>
+<tr><td><code>video</code></td><td>Allows your user account to directly access video devices. Required for certain video drivers and webcams.</td></tr>
+<tr><td><code>plugdev</code></td><td>Allows your user account work with various removable devices. Allows adding of a WiFi network in GNOME without providing root password. Recommended for desktop users.</td></tr>
+<tr><td><code>portage</code></td><td>Allows extended use of Portage as regular user. Recommended.</td></tr>
+</tbody></table></div>
+<p>To add your user to multiple groups, use the <code>usermod</code> command, specifying a complete group list:
+</p>
+<pre class="code"><span class="code_host">chroot</span> <span class="code_blue">#</span> <span class="code_input">usermod -G wheel,audio,video,plugdev,portage drobbins</span></pre>
+<p>As with your root account, don't forget to set a password:
+</p>
+<pre class="code"><span class="code_host">chroot</span> <span class="code_blue">#</span> <span class="code_input">passwd drobbins</span>
+New password: <span class="code_input">**********</span>
+Retype new password: <span class="code_input">**********</span>
+passwd: password updated successfully</pre>
+<h3><span class="mw-headline" id="Install_an_Entropy_Generator">Install an Entropy Generator</span></h3>
+<p>The Linux kernel uses various sources such as user input to generate entropy, which is in turn used for generating random numbers. Encrypted communications can use a lot of entropy, and often the amount of entropy generated by your system will not be sufficient. This is commonly an issue on headless server systems, which can also include ARM systems such as Raspberry Pi, and can result in slower than normal ssh connections among other issues.
+</p><p>To compensate for this, a user-space entropy generator can be emerged and enabled at boot time. We will use <code>haveged</code> in this example, although others are available, such as <code>rng-tools</code>.
+</p>
+<pre class="code"><span class="code_host">chroot</span> <span class="code_blue">#</span> <span class="code_input">emerge haveged</span>
+<span class="code_host">chroot</span> <span class="code_blue">#</span> <span class="code_input">rc-update add haveged default</span></pre>
+<p>Haveged will now start at boot and will augment the Linux kernel's entropy pool.
+</p>
+<h3><span class="mw-headline" id="Restart_your_system">Restart your system</span></h3>
+<p>Now is the time to leave fchroot, to unmount Funtoo Linux partitions and files and to restart your computer. When you restart, the GRUB boot loader will start, load the Linux kernel and initramfs, and your system will begin booting.
+</p><p>To leave the fchroot, simply type <code>exit</code> and you will be returned back to your LiveCD shell.
+</p><p>If you used manual chroot steps, you can use the following sequence of commands prepare to restart:
+</p>
+<pre class="code"><span class="code_host">chroot</span> <span class="code_blue">#</span> <span class="code_input">exit</span>
+<span class="code_root">root</span> <span class="code_blue">#</span> <span class="code_input">cd /mnt</span>
+<span class="code_root">root</span> <span class="code_blue">#</span> <span class="code_input">umount -lR funtoo</span></pre>
+<p>Now, you are ready to reboot into Funtoo:
+</p>
+<pre class="code"><span class="code_root">root</span> <span class="code_blue">#</span> <span class="code_input">reboot</span></pre>
+<p>You should now see your system reboot, the GRUB boot loader appear for a few seconds, and then see the Linux kernel and initramfs loading. After this, you should see Funtoo Linux itself start to boot, and you should be greeted with a <code>login:</code> prompt. Funtoo Linux has been successfully installed!
+</p>
+<h2><span class="mw-headline" id="Profiles">Profiles</span></h2>
+<p>Once you have rebooted into Funtoo Linux, you can further customize your system to your needs by using <a href="https://www.funtoo.org/Funtoo_Profiles" title="Funtoo Profiles">Funtoo Profiles</a>. A quick introduction to profiles is included below -- consult the <a href="https://www.funtoo.org/Funtoo_Profiles" title="Funtoo Profiles">Funtoo Profiles</a> page for more detailed information. There are five basic profile types: arch, build, subarch, flavors and mix-ins:
+</p>
+<div class="table-responsive"><table class="table">
+<tbody><tr><th class="active">Sub-Profile Type</th><th class="active">Description</th></tr>
+<tr><td><code>arch</code></td><td>Typically <code>x86-32bit</code> or <code>x86-64bit</code>, this defines the processor type and support of your system. This is defined when your stage was built and should not be changed.</td></tr>
+<tr><td><code>build</code></td><td>Defines whether your system is a <code>current</code>, <code>stable</code> or <code>experimental</code> build. At the moment, all Funtoo Linux builds use the <code>funtoo-current</code> build profile.</td></tr>
+<tr><td><code>subarch</code></td><td>Defines CPU optimizations for your system. The subarch is set at the time the stage3 is built, but can be changed later to better settings if necessary. Be sure to pick a <a href="https://www.funtoo.org/Subarches" title="Subarches">setting that is compatible with your CPU</a>.</td></tr>
+<tr><td><code>flavor</code></td><td>Defines the general type of system, such as <code>server</code> or <code>desktop</code>, and will set default USE flags appropriate for your needs.</td></tr>
+<tr><td><code>mix-ins</code></td><td>Defines various optional settings that you may be interested in enabling.</td></tr>
+</tbody></table></div>
+<p>One arch, build and flavor must be set for each Funtoo Linux system, while mix-ins are optional and you can enable more than one if desired. Often, flavors and mix-ins inherit settings from other sub-profiles. Use <code>epro show</code> to view your current profile settings, in addition to any inheritance information.
+</p>
+<div class="note">
+<div class="note-head"><i class="fas fa-comment-alt"></i>&nbsp;&nbsp;&nbsp;Note</div><div class="note-body">
+<p>It's recommended that your run this command now, particularly if you are using the <i><code>gnome</code></i> install image, in order to familiarize yourself with the current profile settings on your system.
+</p>
+</div></div>
+<pre class="code"><span class="code_root">root</span> <span class="code_blue">#</span> <span class="code_input">epro show</span>
+
+=== <span class="code_green">Enabled Profiles</span>: ===
+
+        arch: <span class="code_cyan"> x86-64bit</span>
+       build: <span class="code_cyan"> current</span>
+     subarch: <span class="code_cyan"> intel64-haswell</span>
+      flavor: <span class="code_cyan"> desktop</span>
+     mix-ins: <span class="code_cyan"> gnome</span>
+
+
+=== <span class="code_green">All inherited flavors from desktop flavor</span>: ===
+
+                     <span class="code_cyan">workstation</span> (from desktop flavor)
+                            <span class="code_cyan">core</span> (from workstation flavor)
+                         <span class="code_cyan">minimal</span> (from core flavor)
+
+=== <span class="code_green">All inherited mix-ins from desktop flavor</span>: ===
+
+                               <span class="code_cyan">X</span> (from workstation flavor)
+                           <span class="code_cyan">audio</span> (from workstation flavor)
+                             <span class="code_cyan">dvd</span> (from workstation flavor)
+                           <span class="code_cyan">media</span> (from workstation flavor)
+      <span class="code_cyan">mediadevice-audio-consumer</span> (from media mix-in)
+                <span class="code_cyan">mediadevice-base</span> (from mediadevice-audio-consumer mix-in)
+      <span class="code_cyan">mediadevice-video-consumer</span> (from media mix-in)
+                <span class="code_cyan">mediadevice-base</span> (from mediadevice-video-consumer mix-in)
+        <span class="code_cyan">mediaformat-audio-common</span> (from media mix-in)
+          <span class="code_cyan">mediaformat-gfx-common</span> (from media mix-in)
+        <span class="code_cyan">mediaformat-video-common</span> (from media mix-in)
+                  <span class="code_cyan">console-extras</span> (from workstation flavor)
+                           <span class="code_cyan">print</span> (from desktop flavor)</pre>
+<p>Here are some basic examples of <code>epro</code> usage:
+</p>
+<div class="table-responsive"><table class="table">
+<tbody><tr><th class="active">Description</th><th class="active">Command</th></tr>
+<tr><td>View available profiles. Enabled profiles will be highlighted in cyan. Directly enabled profiles will be in bold and have a <code>*</code> appended.</td><td><code>epro list</code></td></tr>
+<tr><td>Change the system flavor.</td><td><code>epro flavor desktop</code></td></tr>
+<tr><td>Add a mix-in.</td><td><code>epro mix-in +gnome</code></td></tr>
+</tbody></table></div>
+<h3><span class="mw-headline" id="Graphics_Settings">Graphics Settings</span></h3>
+<div class="note">
+<div class="note-head"><i class="fas fa-comment-alt"></i>&nbsp;&nbsp;&nbsp;Note</div><div class="note-body">
+<p>The <i><code>gnome</code></i> install image will have additional graphic support already enabled for you, but you will still need to set up X and your display manager (covered in the next section.)
+</p>
+</div></div>
+<p>Funtoo Linux 1.4 features the following mix-ins to allow simplified configuration of your graphics settings. It's recommended to use these mix-ins rather than manually placing <code>USE</code> and <code>VIDEO_CARDS</code> settings in <code>/etc/make.conf</code>. You can learn more about Funtoo's graphics configuration and the design approach of these settings at the <a href="https://www.funtoo.org/Make.conf/VIDEO_CARDS" title="Make.conf/VIDEO CARDS">make.conf/VIDEO_CARDS</a> page.
+</p>
+<div style="background-color: #eeefe3; border-radius: 8px; padding: 10px;">
+<h3><span class="mw-headline" id="Funtoo_Graphics_Mix-Ins">Funtoo Graphics Mix-Ins</span></h3>
+<dl><dt><code>gfxcard-intel</code></dt>
+<dd>This mix-in is equivalent to <code>gfxcard-intel-classic</code> or <code>gfxcard-intel-iris</code>, depending on the release you're running. Currently, it defaults to <code>gfxcard-intel-classic</code> on 1.4-release and to  <code>gfxcard-intel-classic</code> on Next release.  Do not enable more than 1 <code>gfxcard-intel*</code> mix-in at the same time. The result is not what you might expect.</dd>
+<dt><code>gfxcard-intel-classic</code></dt>
+<dd>This mix-in enables Intel graphics support based on the older i915 mesa driver (not to be confused with the i915 kernel driver). Choose this if you have a Gen3 or older chipset.</dd>
+<dt><code>gfxcard-intel-iris</code></dt>
+<dd>This mix-in enables Intel graphics support for cards with glamor modesetting support (drivers i965 or iris), including support OpenGL ES (&gt;=Gen4) and OpenCL and Vulkan (&gt;=Gen7) and video acceleration where available. If your card is &gt;=Gen5, do an <code>emerge libva-intel-driver</code> or <code>emerge media-libs/libva-intel-media-driver</code> (for &gt;=Gen8) afterwards to ensure you have full video acceleration support.</dd>
+<dt><code>gfxcard-amdgpu</code></dt>
+<dd>This mix-in enables support for modern Radeon cards, Southern Islands -- GFX Core 6 (see <a class="external text" href="https://www.x.org/wiki/RadeonFeature/#index6h2">this x.org reference</a>) and greater. Includes Vulkan and video acceleration where available. Drivers are built for both the Gallium framework (modern replacement for DRI framework) and DRI framework. Glamor is used to accelerate 2D operations.</dd>
+<dt><code>gfxcard-radeon</code></dt>
+<dd>This mix-in enables support for modern Radeon cards, R600 through Northern Islands -- GFX Core 4 and 5 (see <a class="external text" href="https://www.x.org/wiki/RadeonFeature/#index6h2">this x.org reference</a>). Drivers are built for the Gallium framework (modern replacement for DRI framework) as well as DRI framework. Glamor is used to accelerate 2D operations.</dd>
+<dt><code>gfxcard-older-ati</code></dt>
+<dd>Use this mix-in to enable support for R300 up to (but not including) R600 Radeon cards -- -- GFX Core 3 (see <a class="external text" href="https://www.x.org/wiki/RadeonFeature/#index6h2">this x.org reference</a>). DRI as well as Gallium-based drivers are enabled.</dd>
+<dt><code>gfxcard-ancient-ati</code></dt>
+<dd>Use this mix-in to enable support pre-R300 cards -- GFX Core 1 and 2 (see <a class="external text" href="https://www.x.org/wiki/RadeonFeature/#index6h2">this x.org reference</a>). These drivers are DRI-based.</dd>
+<dt><code>gfxcard-nvidia</code></dt>
+<dd>Use this to enable support for proprietary NVIDIA drivers. You will also need to <code>emerge nvidia-kernel-modules</code>, blacklist <code>nouveau</code> and add yourself to the <code>video</code> group. See <a href="https://www.funtoo.org/Package:NVIDIA_Linux_Display_Drivers" title="Package:NVIDIA Linux Display Drivers">this documentation</a> for more details. Note that Funtoo now has two catpkgs for NVIDIA proprietary graphics -- <code>nvidia-drivers</code> and <code>nvidia-kernel-modules</code> -- to aid the use of NVIDIA acceleration on containers.</dd>
+<dt><code>gfxcard-nvidia-legacy</code></dt>
+<dd>Proprietary NVIDIA drivers like above, but the legacy version of the driver that supports older hardware. See <a class="external free" href="https://www.nvidia.com/en-us/drivers/unix/">https://www.nvidia.com/en-us/drivers/unix/</a> and browse the specific driver version that <code>emerge</code> is installing to get detailed compatibility information.</dd>
+<dt><code>gfxcard-nouveau</code></dt>
+<dd>Use this mix-in to enable support for Open Source nouveau drivers.</dd></dl>
+</div>
+<p>Enable the appropriate graphics options for your hardware as follows:
+</p>
+<pre class="code"><span class="code_root">root</span> <span class="code_blue">#</span> <span class="code_input">epro mix-in +gfxcard-intel</span></pre>
+<p>Once this has been done, proceed to set up X, KDE, GNOME or another desktop environment on your system, as desired. See the next section for more information on this. 
+</p>
+<h2><span id="All_Done!"></span><span class="mw-headline" id="All_Done.21">All Done!</span></h2>
+<p>If you are brand new to Funtoo Linux and Gentoo Linux, please check out <a href="https://www.funtoo.org/Funtoo_Linux_First_Steps" title="Funtoo Linux First Steps">Funtoo Linux First Steps</a>, which will help get you acquainted with your new system. 
+</p>
+<div class="note important">
+<div class="note-head important"><i class="fas fa-exclamation"></i>&nbsp;&nbsp;&nbsp;Important</div><div class="note-body important">
+<p>If you are using the <i><code>gnome</code></i> install image, please see the <a href="https://www.funtoo.org/GNOME_First_Steps#A_few_finishing_touches" title="GNOME First Steps">"A few finishing touches" section of the GNOME setup docs</a> in order to continue setting up your graphical environment.
+</p>
+</div></div>
+<p>You may also be interested in the following resources:
+</p>
+<ul><li><a href="https://www.funtoo.org/Chroot_and_Containers" title="Chroot and Containers">Chroot_and_Containers</a> setting up 32 bit containers to run wine, and STEAM.</li>
+<li><a href="https://www.funtoo.org/Security" title="Security">Security</a> - tips for securing your system</li>
+<li><a href="https://www.funtoo.org/Btrfs" title="Btrfs">Btrfs</a> - a simple guide for setting up btrfs on your new Funtoo Linux system.</li>
+<li><a href="https://www.funtoo.org/Category:Official_Documentation" title="Category:Official Documentation">official documentation</a>, which includes all docs that we officially maintain for installation and operation of Funtoo Linux.</li></ul>
+<p>We also have a number of pages dedicated to setting up your system. See the <a href="https://www.funtoo.org/Category:First_Steps" title="Category:First Steps">First Steps Category</a> for a list of these pages.
+</p><p>If your system did not boot correctly, see <a href="https://www.funtoo.org/Installation_Troubleshooting" title="Installation Troubleshooting">Installation Troubleshooting</a> for steps you can take to resolve the problem.
+</p><p><br>
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20240108203428
+Cache expiry: 86400
+Dynamic content: false
+Complications: []
+CPU time usage: 0.168 seconds
+Real time usage: 0.205 seconds
+Preprocessor visited node count: 2540/1000000
+Post‐expand include size: 277696/2097152 bytes
+Template argument size: 19664/2097152 bytes
+Highest expansion depth: 11/40
+Expensive parser function count: 19/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 20340/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  117.511      1 -total
+ 97.85%  114.984     19 Template:Translated_subpage
+ 17.70%   20.800     12 Template:F
+ 14.22%   16.705      1 Install/Configuration_Files/en
+  7.92%    9.303      1 Install/Profiles/en
+  7.50%    8.818      1 Install/Creating_Filesystems/en
+  7.49%    8.796      1 Install/MBR_Partitioning/en
+  6.73%    7.905      1 Install/Introduction/en
+  6.73%    7.904     69 Template:Console
+  6.60%    7.752      1 Install/Download_and_Extract_Stage3/en
+-->
+
+<!-- Saved in parser cache with key new_wiki:pcache:idhash:10076-0!canonical and timestamp 20240108203428 and revision id 38106. Serialized with JSON.
+ -->
+</div>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://www.funtoo.org/index.php?title=InstallPrintable&amp;oldid=38106">https://www.funtoo.org/index.php?title=InstallPrintable&amp;oldid=38106</a>"</div></div>
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="https://www.funtoo.org/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="https://www.funtoo.org/Category:HOWTO" title="Category:HOWTO">HOWTO</a></li><li><a href="https://www.funtoo.org/Category:Install" title="Category:Install">Install</a></li><li><a href="https://www.funtoo.org/Category:Official_Documentation" title="Category:Official Documentation">Official Documentation</a></li></ul></div></div>
+	</div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+	<div id="mw-head">
+		<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-personal" class="mw-portlet mw-portlet-personal vector-menu" aria-labelledby="p-personal-label" role="navigation">
+	<h3 id="p-personal-label" class="vector-menu-heading">
+		<span>Personal tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		<ul class="vector-menu-content-list"><li id="pt-uls" class="active"><a href="https://www.funtoo.org/InstallPrintable#" class="uls-trigger">English</a></li><li id="pt-login"><a href="https://www.funtoo.org/index.php?title=Special:UserLogin&amp;returnto=InstallPrintable" title="You are encouraged to log in; however, it is not mandatory [alt-shift-o]" accesskey="o">Log in</a></li></ul>
+		
+	</div>
+</nav>
+
+		<div id="left-navigation">
+			<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-namespaces" class="mw-portlet mw-portlet-namespaces vector-menu vector-menu-tabs" aria-labelledby="p-namespaces-label" role="navigation">
+	<h3 id="p-namespaces-label" class="vector-menu-heading">
+		<span>Namespaces</span>
+	</h3>
+	<div class="vector-menu-content">
+		<ul class="vector-menu-content-list"><li id="ca-nstab-main" class="selected"><a href="https://www.funtoo.org/InstallPrintable" title="View the content page [alt-shift-c]" accesskey="c">Page</a></li><li id="ca-talk" class="new"><a href="https://www.funtoo.org/index.php?title=Talk:InstallPrintable&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [alt-shift-t]" accesskey="t">Discussion</a></li></ul>
+		
+	</div>
+</nav>
+
+			<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-variants" class="mw-portlet mw-portlet-variants emptyPortlet vector-menu vector-menu-dropdown" aria-labelledby="p-variants-label" role="navigation">
+	<input type="checkbox" class="vector-menu-checkbox webfonts-changed" aria-labelledby="p-variants-label">
+	<h3 id="p-variants-label" class="vector-menu-heading">
+		<span>Variants</span>
+	</h3>
+	<div class="vector-menu-content">
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+		</div>
+		<div id="right-navigation">
+			<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-views" class="mw-portlet mw-portlet-views vector-menu vector-menu-tabs" aria-labelledby="p-views-label" role="navigation">
+	<h3 id="p-views-label" class="vector-menu-heading">
+		<span>Views</span>
+	</h3>
+	<div class="vector-menu-content">
+		<ul class="vector-menu-content-list"><li id="ca-view" class="selected collapsible"><a href="https://www.funtoo.org/InstallPrintable">Read</a></li><li id="ca-viewsource" class="collapsible"><a href="https://www.funtoo.org/index.php?title=InstallPrintable&amp;action=edit" title="This page is protected.
+You can view its source [alt-shift-e]" accesskey="e">View source</a></li><li id="ca-history" class="collapsible"><a href="https://www.funtoo.org/index.php?title=InstallPrintable&amp;action=history" title="Past revisions of this page [alt-shift-h]" accesskey="h">View history</a></li></ul>
+		
+	</div>
+</nav>
+
+			<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-cactions" class="mw-portlet mw-portlet-cactions emptyPortlet vector-menu vector-menu-dropdown" aria-labelledby="p-cactions-label" role="navigation">
+	<input type="checkbox" class="vector-menu-checkbox webfonts-changed" aria-labelledby="p-cactions-label">
+	<h3 id="p-cactions-label" class="vector-menu-heading">
+		<span>More</span>
+	</h3>
+	<div class="vector-menu-content">
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+			<div id="p-search" role="search">
+	<h3>
+		<label for="searchInput">Search</label>
+	</h3>
+	<form action="https://www.funtoo.org/index.php" id="searchform">
+		<div id="simpleSearch" data-search-loc="header-navigation">
+			<input type="search" name="search" placeholder="Search Funtoo" autocapitalize="sentences" title="Search Funtoo [alt-shift-f]" accesskey="f" id="searchInput" class="webfonts-changed">
+			<input type="hidden" name="title" value="Special:Search" class="webfonts-changed">
+			<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton webfonts-changed">
+			<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton webfonts-changed">
+		</div>
+	</form>
+</div>
+
+		</div>
+	</div>
+	
+<div id="mw-panel">
+	<div id="p-logo" role="banner">
+		<a class="mw-wiki-logo" href="https://www.funtoo.org/Welcome" title="Visit the main page"></a>
+	</div>
+	<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-foo" class="mw-portlet mw-portlet-foo emptyPortlet vector-menu vector-menu-portal portal" aria-labelledby="p-foo-label" role="navigation">
+	<h3 id="p-foo-label" class="vector-menu-heading">
+		<span>foo</span>
+	</h3>
+	<div class="vector-menu-content">
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+	<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-Funtoo_Linux" class="mw-portlet mw-portlet-Funtoo_Linux vector-menu vector-menu-portal portal" aria-labelledby="p-Funtoo_Linux-label" role="navigation">
+	<h3 id="p-Funtoo_Linux-label" class="vector-menu-heading">
+		<span>Funtoo Linux</span>
+	</h3>
+	<div class="vector-menu-content">
+		<ul class="vector-menu-content-list"><li id="n-Install"><a href="https://www.funtoo.org/Install/Introduction">Install</a></li><li id="n-Support-Matrix"><a href="https://www.funtoo.org/Support_Matrix">Support Matrix</a></li><li id="n-Download.C2.A0"><a href="https://www.funtoo.org/Subarches">Download&nbsp;</a></li><li id="n-Find-your-CPU"><a href="https://www.funtoo.org/Funtoo_CPU_Database">Find your CPU</a></li><li id="n-FAQ"><a href="https://www.funtoo.org/FAQ">FAQ</a></li></ul>
+		
+	</div>
+</nav>
+<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-Infrastructure" class="mw-portlet mw-portlet-Infrastructure vector-menu vector-menu-portal portal" aria-labelledby="p-Infrastructure-label" role="navigation">
+	<h3 id="p-Infrastructure-label" class="vector-menu-heading">
+		<span>Infrastructure</span>
+	</h3>
+	<div class="vector-menu-content">
+		<ul class="vector-menu-content-list"><li id="n-YouTube-Channel"><a href="https://www.youtube.com/channel/UCKmOY6p3c9hxv3vJMAF8vVw">YouTube Channel</a></li><li id="n-Discord"><a href="https://discord.gg/BNUSpUU">Discord</a></li><li id="n-Report-a-Bug"><a href="https://bugs.funtoo.org/">Report a Bug</a></li><li id="n-Submit-Code"><a href="https://code.funtoo.org/">Submit Code</a></li><li id="n-Forums"><a href="http://forums.funtoo.org/">Forums</a></li><li id="n-Server-Status"><a href="https://status.funtoo.org/">Server Status</a></li><li id="n-Sponsors"><a href="https://www.funtoo.org/Sponsors">Sponsors</a></li></ul>
+		
+	</div>
+</nav>
+<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-Projects" class="mw-portlet mw-portlet-Projects vector-menu vector-menu-portal portal" aria-labelledby="p-Projects-label" role="navigation">
+	<h3 id="p-Projects-label" class="vector-menu-heading">
+		<span>Projects</span>
+	</h3>
+	<div class="vector-menu-content">
+		<ul class="vector-menu-content-list"><li id="n-Keychain"><a href="https://www.funtoo.org/Keychain">Keychain</a></li><li id="n-Containers"><a href="https://www.funtoo.org/Funtoo_Containers">Containers</a></li><li id="n-Metro"><a href="https://www.funtoo.org/Metro">Metro</a></li></ul>
+		
+	</div>
+</nav>
+<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-Misc" class="mw-portlet mw-portlet-Misc vector-menu vector-menu-portal portal" aria-labelledby="p-Misc-label" role="navigation">
+	<h3 id="p-Misc-label" class="vector-menu-heading">
+		<span>Misc</span>
+	</h3>
+	<div class="vector-menu-content">
+		<ul class="vector-menu-content-list"><li id="n-Ebuilds"><a href="https://www.funtoo.org/Ebuilds">Ebuilds</a></li><li id="n-Wiki-Editing-Guidelines"><a href="https://www.funtoo.org/Help:Funtoo_Editing_Guidelines">Wiki Editing Guidelines</a></li><li id="n-Development-Guide"><a href="https://www.funtoo.org/Development_Guide">Development Guide</a></li></ul>
+		
+	</div>
+</nav>
+<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-Categories" class="mw-portlet mw-portlet-Categories vector-menu vector-menu-portal portal" aria-labelledby="p-Categories-label" role="navigation">
+	<h3 id="p-Categories-label" class="vector-menu-heading">
+		<span>Categories</span>
+	</h3>
+	<div class="vector-menu-content">
+		<ul class="vector-menu-content-list"><li id="n-Articles"><a href="https://www.funtoo.org/Category:Articles">Articles</a></li><li id="n-HOWTOs"><a href="https://www.funtoo.org/Category:HOWTO">HOWTOs</a></li><li id="n-Tutorials"><a href="https://www.funtoo.org/Category:Tutorial">Tutorials</a></li><li id="n-Networking"><a href="https://www.funtoo.org/Category:Networking">Networking</a></li><li id="n-Portage"><a href="https://www.funtoo.org/Category:Portage">Portage</a></li></ul>
+		
+	</div>
+</nav>
+<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-Links" class="mw-portlet mw-portlet-Links vector-menu vector-menu-portal portal" aria-labelledby="p-Links-label" role="navigation">
+	<h3 id="p-Links-label" class="vector-menu-heading">
+		<span>Links</span>
+	</h3>
+	<div class="vector-menu-content">
+		<ul class="vector-menu-content-list"><li id="n-recentchanges"><a href="https://www.funtoo.org/Special:RecentChanges" title="A list of recent changes in the wiki [alt-shift-r]" accesskey="r">Recent changes</a></li><li id="n-MediaWiki-Help"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents">MediaWiki Help</a></li></ul>
+		
+	</div>
+</nav>
+<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-tb" class="mw-portlet mw-portlet-tb vector-menu vector-menu-portal portal" aria-labelledby="p-tb-label" role="navigation">
+	<h3 id="p-tb-label" class="vector-menu-heading">
+		<span>Tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		<ul class="vector-menu-content-list"><li id="t-whatlinkshere"><a href="https://www.funtoo.org/Special:WhatLinksHere/InstallPrintable" title="A list of all wiki pages that link here [alt-shift-j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="https://www.funtoo.org/Special:RecentChangesLinked/InstallPrintable" rel="nofollow" title="Recent changes in pages linked from this page [alt-shift-k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="https://www.funtoo.org/Special:SpecialPages" title="A list of all special pages [alt-shift-q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="javascript:print();" rel="alternate" title="Printable version of this page [alt-shift-p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="https://www.funtoo.org/index.php?title=InstallPrintable&amp;oldid=38106" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="https://www.funtoo.org/index.php?title=InstallPrintable&amp;action=info" title="More information about this page">Page information</a></li><li id="t-cargopagevalueslink"><a href="https://www.funtoo.org/index.php?title=InstallPrintable&amp;action=pagevalues" rel="cargo-pagevalues">Page values</a></li></ul>
+		
+	</div>
+</nav>
+
+	
+</div>
+
+</div>
+<footer id="footer" class="mw-footer" role="contentinfo">
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on December 6, 2021, at 01:43.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://www.funtoo.org/Funtoo:Privacy_policy" title="Funtoo:Privacy policy">Policies/Contact Us</a></li>
+	<li id="footer-places-about"><a href="https://www.funtoo.org/Funtoo:About" class="mw-redirect" title="Funtoo:About">About Funtoo</a></li>
+	<li id="footer-places-disclaimer"><a href="https://www.funtoo.org/Funtoo:General_disclaimer" title="Funtoo:General disclaimer">Disclaimers</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="./Funtoo Linux Installation Guide - Funtoo_files/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"></a></li>
+</ul>
+
+</footer>
+
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.168","walltime":"0.205","ppvisitednodes":{"value":2540,"limit":1000000},"postexpandincludesize":{"value":277696,"limit":2097152},"templateargumentsize":{"value":19664,"limit":2097152},"expansiondepth":{"value":11,"limit":40},"expensivefunctioncount":{"value":19,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":20340,"limit":5000000},"timingprofile":["100.00%  117.511      1 -total"," 97.85%  114.984     19 Template:Translated_subpage"," 17.70%   20.800     12 Template:F"," 14.22%   16.705      1 Install/Configuration_Files/en","  7.92%    9.303      1 Install/Profiles/en","  7.50%    8.818      1 Install/Creating_Filesystems/en","  7.49%    8.796      1 Install/MBR_Partitioning/en","  6.73%    7.905      1 Install/Introduction/en","  6.73%    7.904     69 Template:Console","  6.60%    7.752      1 Install/Download_and_Extract_Stage3/en"]},"cachereport":{"timestamp":"20240108203428","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":94});});</script>
+</body></html>

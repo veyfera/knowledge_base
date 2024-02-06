@@ -1,0 +1,6 @@
+https://stackoverflow.com/questions/12183757/reverse-dependency-generation-with-zypper/33802775#33802775
+zypper se --requires packagename
+
+Also, you can search only among installed packages with:
+
+zypper se -i --requires packagename

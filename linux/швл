@@ -1,0 +1,16 @@
+Прошу прощения за вторжение, если еще актуально по тачпаду.
+Я делал через libinput, нужно будет его установить (если не стоит в системе) и разобраться в настройках, стоит обратить внимание на опции: buttonareas, clickMethod, возможне еще покопаться и вкл/выкл то что нужно.
+док libinput - https://manpages.ubuntu.com/manpages/xenial/man4/libinput.4.html
+
+Если нчего не именилось с того времени как я настраивал, то на выхлопе получится файлик 30-touchpad.conf который закидывается в /etc/X11/xorg.conf.d/ содержимое будет примерно такое:
+
+Section "InputClass"
+    Identifier "touchpad"
+    Driver "libinput"
+    MatchIsTouchpad "on"
+    Option "ClickMethod" "buttonareas"
+EndSection
+
+может здесь что то полезным будет - https://bbs.archlinux.org/viewtopic.php?id=239747
+
+Просто сам долго мучился и разбирался, врагу не пожелаещь, а собрату по разуму тем более ; )

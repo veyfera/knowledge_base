@@ -1,0 +1,2 @@
+To make an ISO from files on your hard drive.
+mkisofs -o /tmp/cd.iso /tmp/directory/

@@ -1,0 +1,5 @@
+#copy sellection into copy paste buffer
+xclip -o | xclip -selection clipboard -i
+
+#see connected input devices
+cat /proc/bus/input/devices

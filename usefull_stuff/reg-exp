@@ -1,0 +1,9 @@
+#does not contain "bread"
+^((?!bread).)*$
+
+
+#open and colsing bracets
+fields = re.findall("{([^{]*?)}", text, re.MULTILINE)
+#not open/closed brackets
+brackets_errors = re.findall("(\s[^ {]{1,}}|{[^}\n]*([\n ]|$))", text, re.MULTILINE)
+

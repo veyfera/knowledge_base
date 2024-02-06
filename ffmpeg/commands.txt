@@ -11,3 +11,9 @@ ffmpeg -i source.mkv -filter:v "crop=459:632:340:39" -c:a copy out.mp4
 # a slow one just in case
 ffmpeg -i input.mp4 -vf "crop=459:632:340:39" -c:v libx265 -crf 17 -c:a copy ouptut.mp4
 
+
+#resize video
+#    scale=widht:height
+#    -1 means that you specify height/widht and the second parameter will be calculated automatically to maintain aspect ratio
+#    veryslow means good compression but takes more time
+ffmpeg -i MyMovie.mkv -vf scale=-1:720 -c:v libx264 -crf 18 -preset veryslow -c:a copy MyMovie_720p.mkv
